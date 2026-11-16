@@ -10,6 +10,7 @@ import os
 import numpy as np
 import pandas as pd
 import statsmodels.api as sm
+from statsmodels.tsa.stattools import adfuller
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "..", "data")
@@ -59,4 +60,20 @@ for t, (px, nav, dist) in funds.items():
     rows.append({"fund": t, "discount": round(m.disc.iloc[-1], 2), "fitted_own_history": round(r.fittedvalues.iloc[-1], 2),
                  "residual": round(resid.iloc[-1], 2), "residual_sd": round(resid.std(), 2), "r2": round(r.rsquared, 2)})
 pd.DataFrame(rows).to_csv(os.path.join(RES, "discount_own_history.csv"), index=False)
+
+# The levels regression above puts a trending series (the 10-year) on the right and a mean-reverting one (the
+# discount) on the left, which overstates the t-stat. The honest test is changes on changes.
+p("\nIS THE 10-YEAR LINK REAL? changes on changes, BUI")
+d = pd.DataFrame({"disc": (bui.bui_close / bui.bui_nav - 1) * 100, "y10": y.reindex(bui.index).ffill()}).dropna()
+mm = d.resample("ME").last()
+p("  unit-root test p-values (monthly levels): discount %.3f, 10-year %.3f" %
+  (adfuller(mm.disc)[1], adfuller(mm.y10)[1]))
+for freq, lag, lab in [("ME", 6, "monthly"), ("W-FRI", 4, "weekly")]:
+    ch = d.resample(freq).last().diff().dropna()
+    for start in ["2017", "2023"]:
+        c = ch.loc[start:]
+        r = sm.OLS(c.disc, sm.add_constant(c.y10)).fit(cov_type="HAC", cov_kwds={"maxlags": lag})
+        p("  %-7s since %s: %.2f pts of discount per 1 pt of 10-year (t %.1f), R2 %.3f, n %d" %
+          (lab, start, r.params["y10"], r.tvalues["y10"], r.rsquared, int(r.nobs)))
+p("  reading: same sign as the levels regression, but weak, and it explains about 1% of moves")
 open(os.path.join(RES, "discount_own_history.txt"), "w").write("\n".join(out) + "\n")
