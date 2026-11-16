@@ -1,0 +1,7 @@
+in-sample 2016-2020, threshold 3: 125 signal days, mean 1.80, hit 46%
+in-sample 2016-2020, threshold 4: 79 signal days, mean 2.29, hit 39%
+in-sample 2016-2020, threshold 5: 53 signal days, mean 2.94, hit 38%
+in-sample 2016-2020, threshold 6: 29 signal days, mean 4.73, hit 45%
+in-sample 2016-2020, threshold 7: 16 signal days, mean 5.87, hit 50%
+chosen on 2016-2020: 5 points
+out of sample 2021 on, threshold 5: 127 signal days, mean 6.76, median 7.61, hit 88%; all days mean -2.13, hit 53%
