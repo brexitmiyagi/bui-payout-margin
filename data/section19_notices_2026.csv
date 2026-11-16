@@ -1,0 +1,10 @@
+notice_pay_date,performance_as_of,month_distribution,month_net_income,month_st_gains,month_lt_gains,month_return_of_capital,ytd_distributions,ytd_net_income,ytd_st_gains,ytd_lt_gains,ytd_return_of_capital,five_year_avg_nav_tr_pct,annualized_dist_rate_on_nav_pct,ytd_cum_nav_tr_pct,ytd_cum_dist_on_nav_pct,source
+2026-02-27,2026-01-31,0.136,0.017215,0.108679,0,0.010106,0.272,0.163321,0.108679,0,0,9.40,6.30,6.05,0.52,https://www.blackrock.com/us/individual/literature/tax-information/blackrock-section-19-february-27-2026.pdf
+2026-03-31,2026-02-28,0.136,0.046883,0.089117,0,0,0.408,0.210158,0.197842,0,0,11.73,5.81,15.55,0.97,https://www.blackrock.com/us/individual/literature/tax-information/section-19-march-31-2026.pdf
+2026-04-30,2026-03-31,0.136,0,0.136,0,0,0.544,0.204943,0.339057,0,0,10.16,5.93,13.78,1.48,https://www.blackrock.com/us/individual/literature/tax-information/section-19-april-30-2026.pdf
+2026-05-29,2026-04-30,0.136,0.062032,0.073968,0,0,0.680,0.250382,0.429618,0,0,10.28,5.74,18.07,1.91,https://www.blackrock.com/us/individual/literature/tax-information/section-19-may-29-2026.pdf
+2026-06-30,2026-05-31,0.136,0.097599,0.038401,0,0,0.816,0.370474,0.445526,0,0,9.57,5.91,15.32,2.46,https://www.blackrock.com/us/individual/literature/tax-information/section-19-june-30-2026.pdf
+2026-07-31,2026-06-30,0.154,0,0.075835,0.078165,0,0.970,0.361394,0.608606,0,0,10.04,6.61,17.18,2.92,https://www.blackrock.com/us/individual/literature/tax-information/section-19-july-31-2026.pdf
+2026-08-31,2026-07-31,0.154,0.033879,0,0.071662,0.048459,1.124,0.394430,0.652189,0.077381,0,8.88,6.89,13.09,3.62,https://www.blackrock.com/us/individual/literature/tax-information/section-19-august-31-2026.pdf
+2026-09-30,2026-08-31,0.154,0.046812,0.026825,0.080363,0,1.278,0.437661,0.670836,0.169503,0,8.15,6.97,12.47,4.24,https://www.blackrock.com/us/individual/literature/tax-information/section-19-september-30-2026.pdf
+2026-10-30,2026-09-30,0.154,0.000092,0,0.153908,0,1.432,0.435662,0.566917,0.429421,0,8.05,7.45,5.83,5.16,https://www.blackrock.com/us/individual/literature/tax-information/section-19-october-30-2026.pdf

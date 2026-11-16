@@ -1,0 +1,8 @@
+result_date,fund,ticker,result_as_announced,approx_new_shares_m,approx_proceeds_m,source
+2025-06-20,BlackRock Core Bond Trust,BHK,over-subscribed,18.0,166,https://www.sec.gov/Archives/edgar/data/1160864/000119312525143458/d949293d497ad.htm
+2025-09-10,BlackRock Multi-Sector Income Trust,BIT,over-subscribed,14,186,https://www.sec.gov/Archives/edgar/data/1562818/000119312525199830/d947113d497ad.htm
+2025-10-21,BlackRock Income Trust,BKT,over-subscribed,8,87.1,https://www.sec.gov/Archives/edgar/data/832327/000119312525245207/d56614d497ad.htm
+2026-01-27,BlackRock Corporate High Yield Fund,HYT,over-subscribed,32,283,https://www.sec.gov/Archives/edgar/data/1222401/000119312526024894/d22476d497ad.htm
+2026-04-03,BlackRock Utilities Infrastructure & Power Opportunities Trust,BUI,undersubscribed,2.4,64.6,https://www.sec.gov/Archives/edgar/data/1528988/000119312526140992/d123774d497ad.htm
+2026-08-21,BlackRock MuniAssets Fund,MUA,over-subscribed,16.8,166,https://www.sec.gov/Archives/edgar/data/901243/000119312526360728/d171117d497ad.htm
+2026-10-22,BlackRock Capital Allocation Term Trust,BCAT,not stated,3.3,43,https://www.sec.gov/Archives/edgar/data/1809541/000119312526428615/d153819d497ad.htm

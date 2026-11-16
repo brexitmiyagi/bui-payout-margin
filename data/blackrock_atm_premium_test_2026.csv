@@ -1,0 +1,7 @@
+ticker,program,start,period,days,max_premium,mean_premium,days_at_or_above_1pct,days_at_or_above_2pct
+BUI,ATM up to 3801642 shares (424B2),2026-07-01,before,146,10.28,1.72,75,67
+BUI,ATM up to 3801642 shares (424B2),2026-07-01,after,94,4.17,0.72,34,8
+CII,ATM (424B2),2026-07-27,before,167,6.13,1.43,95,60
+CII,ATM (424B2),2026-07-27,after,78,2.15,0.10,16,3
+BST,ATM (424B5),2026-05-29,before,130,-2.82,-6.46,0,0
+BST,ATM (424B5),2026-05-29,after,115,0.42,-5.04,0,0
