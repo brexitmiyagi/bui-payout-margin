@@ -1,0 +1,40 @@
+BlackRock equity trusts, Section 19 gap (5-yr NAV TR minus distribution rate on NAV), 30 Sep 2026:
+ticker       type  five_yr_avg_nav_tr_pct  dist_rate_nav_pct    gap  ytd_roc_share_pct
+  BCAT term trust                    6.41              21.81 -15.40                 93
+  ECAT term trust                    8.69              21.60 -12.91                 63
+   BTX term trust                   -2.05               6.17  -8.22                100
+  BMEZ term trust                    1.58               7.11  -5.53                 28
+   BGY  perpetual                    7.60               8.03  -0.43                  0
+   BME  perpetual                    6.89               6.87   0.02                  0
+   BUI  perpetual                    8.05               7.45   0.60                  0
+  BSTZ term trust                    6.86               6.01   0.85                  0
+   BOE  perpetual                    8.64               7.52   1.12                  0
+   BDJ  perpetual                   10.28               7.23   3.05                  0
+   BST  perpetual                    9.50               5.78   3.72                  0
+   CII  perpetual                   13.20               7.06   6.14                  0
+   BCX  perpetual                   13.88               6.44   7.44                 77
+   BGR  perpetual                   20.28               6.23  14.05                 72
+BUI's gap 0.60 ranks 3 of 9 perpetual BlackRock equity trusts (1 = thinnest)
+UTF on the same measure (Cohen & Steers notice, 30 Sep 2026): 7.25 - 7.82 = -0.57
+UTF year to date: NAV total return 4.44% vs distributions 6.40% of NAV; BUI: 5.83% vs 5.16%
+
+final tax character, share paid as return of capital (%):
+year     2023   2024  2025
+ticker                    
+BCX      54.0   61.0  66.0
+BDJ       0.0    0.0   0.0
+BGR      52.0   61.0  69.0
+BGY      58.0    0.0  17.0
+BME      29.0   20.0  23.0
+BMEZ    100.0  100.0  83.0
+BOE      71.0   77.0   0.0
+BST      51.0   48.0   0.0
+BSTZ    100.0   49.0   0.0
+BUI      34.0   24.0   0.0
+CII       0.0    0.0   0.0
+  2023: 9 of 11 trusts paid some return of capital
+  2024: 8 of 11 trusts paid some return of capital
+  2025: 5 of 11 trusts paid some return of capital
+BUI: return of capital 34% of 2023 distributions, 24% of 2024, 0% of 2025
+BUI 2026 notices so far: 0% return of capital year to date in every notice from February to October,
+but the monthly split labelled part of the February and August payments as return of capital

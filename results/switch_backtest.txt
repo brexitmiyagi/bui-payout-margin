@@ -1,0 +1,54 @@
+BUI price TR since 2016-11-14 (x): 3.033  UTF: 2.987
+
+1) SWITCH BACKTEST, spread 5+ pts below trailing 1y median
+days with a full 12m forward window: 2063  signal days: 180
+unconditional UTF-minus-BUI 12m return, mean -0.68 median 2.19, hit 57%
+signal days: mean 5.64 median 7.04, hit 73%
+
+episodes (first signal day):
+  2018-02-05 spread -13.87 norm -8.56 dev -5.31 -> 12m UTF-BUI 12.82
+  2018-09-27 spread -12.87 norm -7.63 dev -5.24 -> 12m UTF-BUI 7.01
+  2018-12-07 spread -12.21 norm -7.07 dev -5.14 -> 12m UTF-BUI 13.03
+  2019-03-22 spread -12.78 norm -7.52 dev -5.26 -> 12m UTF-BUI -8.70
+  2019-08-01 spread -14.87 norm -9.27 dev -5.60 -> 12m UTF-BUI -1.29
+  2020-03-20 spread -15.20 norm -8.42 dev -6.78 -> 12m UTF-BUI 38.82
+  2021-11-15 spread -3.44 norm 1.90 dev -5.34 -> 12m UTF-BUI 9.12
+  2022-01-06 spread -4.29 norm 1.86 dev -6.15 -> 12m UTF-BUI 8.31
+  2023-03-28 spread -2.29 norm 2.77 dev -5.06 -> 12m UTF-BUI 10.66
+  2023-10-09 spread -4.92 norm 1.16 dev -6.07 -> 12m UTF-BUI 16.85
+  2024-01-02 spread -5.42 norm -0.37 dev -5.05 -> 12m UTF-BUI 10.93
+  2025-08-14 spread -3.45 norm 1.60 dev -5.04 -> 12m UTF-BUI -2.07
+closed episodes: 12, mean 9.62, median 9.89, wins 9
+bootstrap: share of random same-size 60-day blocks with mean >= signal mean: 0.110
+
+now (last row 2026-11-13): BUI disc -0.64, UTF disc -6.68, spread -6.04, 1y median -5.33, dev -0.71
+
+2) HALF-LIFE OF DISCOUNT GAPS (weekly AR(1), Friday closes)
+  BUI discount           since 2016: b -0.1397 (se 0.0233), half-life 4.6 weeks, long-run level 1.04
+  BUI discount           since 2023: b -0.1760 (se 0.0396), half-life 3.6 weeks, long-run level -0.10
+  UTF discount           since 2016: b -0.0782 (se 0.0175), half-life 8.5 weeks, long-run level -1.84
+  UTF discount           since 2023: b -0.0965 (se 0.0312), half-life 6.8 weeks, long-run level -1.92
+  UTF minus BUI spread   since 2016: b -0.0798 (se 0.0178), half-life 8.3 weeks, long-run level -2.88
+  UTF minus BUI spread   since 2023: b -0.0928 (se 0.0297), half-life 7.1 weeks, long-run level -1.93
+
+4) SEASONALITY: discount change Nov 16 -> Dec 31 and Dec 31 -> Jan 31 (points)
+ year  bui_nov_dec  bui_jan  utf_nov_dec  utf_jan
+ 2016        -2.33     3.12        -2.74     3.42
+ 2017         4.48    -1.32         4.96    -3.89
+ 2018         5.68    -1.43        -4.12     6.01
+ 2019         0.38     0.79        -5.07     0.69
+ 2020         2.10     3.65         0.16     5.18
+ 2021        -2.28    -0.73        -3.29     0.49
+ 2022        -0.96     3.60         1.83     2.55
+ 2023         4.15     1.42        -6.09     6.89
+ 2024         5.72    -2.54         1.03     1.29
+ 2025         2.51     1.61         0.65     1.53
+  bui_nov_dec mean 1.95, median 2.30, widened in 3 of 10
+  bui_jan mean 0.82, median 1.10, widened in 4 of 10
+  utf_nov_dec mean -1.27, median -1.29, widened in 5 of 10
+  utf_jan mean 2.42, median 2.04, widened in 1 of 10
+
+3) BUI PREMIUM LID
+  Jul 2025-Jun 2026  days 251, max 10.28, mean 2.56, days >= +1%: 176 (70%), days >= +2%: 138, days >= 0: 200
+  since Jul 1 2026   days 96, max 4.17, mean 0.70, days >= +1%: 34 (35%), days >= +2%: 8, days >= 0: 76
+  after a close >= +1%: average change over next 5 days -0.97 pts (n=34)

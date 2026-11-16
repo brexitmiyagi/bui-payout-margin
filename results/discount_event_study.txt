@@ -1,0 +1,22 @@
+BUI                               +5.11 ->  +3.33 ->  +0.02  change -5.09
+BME                               -7.85 ->  -7.32 ->  -3.03  change +4.82
+BMEZ                              -8.50 -> -11.91 ->  -8.79  change -0.29
+BST                               -6.19 ->  -6.56 ->  -3.34  change +2.85
+BSTZ                              -7.21 ->  -9.68 ->  -8.56  change -1.35
+BGR                               -3.91 ->  -4.41 ->  -8.74  change -4.83
+BCX                               -7.26 ->  -5.67 ->  -7.96  change -0.70
+BDJ                               -6.14 ->  -5.31 ->  -7.46  change -1.32
+BOE                               -8.38 ->  -9.45 ->  -9.32  change -0.94
+BGY                               -6.76 ->  -7.34 ->  -9.17  change -2.41
+CII                               -5.41 ->  +1.85 ->  -0.48  change +4.93
+ALL_OTHER_EQUITY_CEFS_MEAN_N97    -5.25 ->  -6.14 ->  -8.50  change -3.25
+seven that dropped calls                 -5.12 -> -5.77 (-0.66)
+four BlackRock funds that kept options   -6.67 -> -6.61 (+0.07)
+other equity CEFs (mean)                 -5.25 -> -8.50 (-3.25)
+difference-in-differences vs BlackRock option funds: -0.72 pts; vs other equity CEFs: +2.59 pts
+2024-06: BlackRock 11 -10.09, other equity CEFs -7.67, BUI -1.29
+2025-06: BlackRock 11 -6.06, other equity CEFs -5.35, BUI 1.48
+2025-10: BlackRock 11 -5.96, other equity CEFs -5.99, BUI 1.96
+2026-02: BlackRock 11 -4.87, other equity CEFs -6.43, BUI 7.07
+2026-09: BlackRock 11 -6.11, other equity CEFs -7.60, BUI 0.50
+2026-10: BlackRock 11 -5.90, other equity CEFs -9.10, BUI -0.08

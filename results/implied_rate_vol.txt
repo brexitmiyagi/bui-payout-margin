@@ -1,0 +1,8 @@
+IEF close 90.15; ATM implied vol at 1 year (interpolated) 7.53%
+IEF empirical duration (last 12 months, daily) 7.13 -> implied 1-year 10-year yield vol 1.06 pts (106 bp)
+historical s.d. of 12-month 10-year changes used before: 0.92 pts; implied is 15% higher
+  bull 10-year 3.75%, NAV total return +19.9%, price $30.08
+  base 10-year 5.24%, NAV total return +8.0%, price $26.57
+  bear 10-year 6.73%, NAV total return -3.9%, price $22.32
+weighted target with implied vol $26.38 (vs $26.38 with historical vol)
+the weighted target barely moves because the scenarios are symmetric and the model is linear in rates; what changes is the width: the bear case price moves from $22.69 to the figure above

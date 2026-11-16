@@ -1,0 +1,7 @@
+series,since,b,se,half_life_weeks,long_run_level
+BUI discount,2016,-0.1397,0.0233,4.6,1.04
+BUI discount,2023,-0.176,0.0396,3.6,-0.1
+UTF discount,2016,-0.0782,0.0175,8.5,-1.84
+UTF discount,2023,-0.0965,0.0312,6.8,-1.92
+UTF minus BUI spread,2016,-0.0798,0.0178,8.3,-2.88
+UTF minus BUI spread,2023,-0.0928,0.0297,7.1,-1.93

@@ -1,0 +1,14 @@
+
+BUI, month-end 2017-11-30 to 2026-11-30, n=109, R2 0.22
+  const      +0.254 (t 0.0)
+  dist_rate  +0.505 (t 0.5)
+  y10        -1.069 (t -3.1)
+  navtr12    +0.102 (t 2.5)
+  latest: discount -0.64, fitted -1.20, residual +0.56 (0.2 standard deviations), residual percentile 60
+
+UTF, month-end 2017-11-30 to 2026-11-30, n=109, R2 0.05
+  const      +11.663 (t 0.9)
+  dist_rate  -1.502 (t -1.0)
+  y10        -0.528 (t -0.7)
+  navtr12    -0.006 (t -0.1)
+  latest: discount -6.68, fitted -1.69, residual -4.99 (-1.0 standard deviations), residual percentile 18

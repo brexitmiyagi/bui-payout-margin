@@ -1,0 +1,8 @@
+2021: NII $0.24, distributions $1.45 (return of capital $0.45), NAV 23.80 -> 25.86, NAV TR 15.13%
+2022: NII $0.33, distributions $1.45 (return of capital $0.59), NAV 25.86 -> 22.37, NAV TR -7.73%
+2023: NII $0.35, distributions $1.45 (return of capital $0.49), NAV 22.37 -> 22.53, NAV TR 7.66%
+2024: NII $0.29, distributions $1.47 (return of capital $0.35), NAV 22.53 -> 22.65, NAV TR 7.28%
+2025: NII $0.28, distributions $2.67 (return of capital $0.00), NAV 22.65 -> 24.56, NAV TR 20.77%
+H1 2026: NII $0.23, distributions $0.82 (return of capital $0.00), NAV 24.56 -> 27.94, NAV TR 17.18%
+H1 2026 NII annualised $0.46 vs $1.848 regular payout = 25% covered by income
+return of capital paid 2021-2024: $1.88 a share

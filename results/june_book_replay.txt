@@ -1,0 +1,36 @@
+SPCX  $ 22.4m held  -18.6%  -0.157 a BUI share
+SRE   $ 20.9m held  -14.2%  -0.112 a BUI share
+PCG   $ 13.9m held  -21.2%  -0.111 a BUI share
+WMB   $ 30.9m held   -7.1%  -0.082 a BUI share
+FRVO  $  3.1m held  -60.6%  -0.070 a BUI share
+NXT   $  8.5m held  -20.2%  -0.065 a BUI share
+VMI   $  5.5m held  -27.1%  -0.057 a BUI share
+AEP   $ 25.7m held   -5.6%  -0.054 a BUI share
+NEE   $ 45.7m held   -3.0%  -0.052 a BUI share
+CMS   $ 16.3m held   -8.0%  -0.049 a BUI share
+FSLR  $  4.7m held  -27.4%  -0.048 a BUI share
+ARRY  $  3.5m held  -34.7%  -0.045 a BUI share
+CNP   $ 17.8m held   -6.5%  -0.043 a BUI share
+PRIM  $  3.6m held  -30.1%  -0.041 a BUI share
+HUBB  $  5.5m held  -16.5%  -0.034 a BUI share
+TT    $  5.6m held  -14.9%  -0.031 a BUI share
+MWH   $  3.7m held  -18.3%  -0.025 a BUI share
+SO    $ 29.2m held   -2.2%  -0.024 a BUI share
+ETR   $ 18.9m held   -3.2%  -0.023 a BUI share
+TRP   $ 25.8m held   -2.3%  -0.022 a BUI share
+NI    $ 12.4m held   -3.2%  -0.015 a BUI share
+D     $ 21.1m held   -0.9%  -0.007 a BUI share
+FE    $ 12.9m held   -1.1%  -0.006 a BUI share
+EXC   $ 17.9m held   -0.8%  -0.005 a BUI share
+LIN   $ 12.8m held   +1.4%  +0.007 a BUI share
+XEL   $ 16.3m held   +1.6%  +0.010 a BUI share
+NGG   $ 29.1m held   +1.7%  +0.019 a BUI share
+DUK   $ 29.3m held   +2.0%  +0.023 a BUI share
+CP    $ 14.6m held   +8.7%  +0.048 a BUI share
+TRGP  $ 24.1m held  +10.9%  +0.099 a BUI share
+UNP   $ 30.4m held  +11.2%  +0.128 a BUI share
+LNG   $ 21.8m held  +29.2%  +0.239 a BUI share
+covered: $554m, 75% of 30 Jun net assets; total -0.61 a share
+growth and equipment (SpaceX, Fervo, solar, grid gear): $66m held, -0.57 a share
+pipelines and railroads: $148m held, +0.41 a share
+utilities and other: $340m held, -0.44 a share

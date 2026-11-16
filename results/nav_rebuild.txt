@@ -1,0 +1,33 @@
+30 Jun 2026 net assets $741.7m; securities $749.6m
+  Level 1: $564.1m, 76.1% of net assets
+  Level 2: $185.6m, 25.0% of net assets
+  Level 3: $0.0m, 0.0% of net assets
+priced daily: 32 names, $554.0m, 74.7% of net assets
+
+30 Jun -> 2026-11-13: reported NAV total return -2.83%, rebuilt (foreign/cash flat) -2.18%, gap -0.65 pts
+daily: reported on rebuilt slope 1.13, R2 0.92, residual sd 0.20% a day (96 days)
+  scaled to the whole fund the slope should be near 1.34 if the unpriced sleeve moved with the priced one
+  largest unexplained days (reported minus fitted, pts):
+    2026-09-14 -0.56
+    2026-10-05 -0.47
+    2026-07-07 -0.45
+    2026-08-12 +0.42
+    2026-11-09 +0.40
+
+largest contributors 30 Jun -> last close, $ per BUI share:
+   SPCX  -0.157
+   SRE   -0.112
+   PCG   -0.111
+   WMB   -0.082
+   CP    +0.048
+   TRGP  +0.099
+   UNP   +0.128
+   LNG   +0.239
+
+DAILY VS WEEKLY RATE BETA, 2026 (pct per +100bp in the 10-year)
+  BUI NAV    daily  beta -6.0 (se 1.1), n 216
+  BUI NAV    weekly beta -6.4 (se 2.6), n 45
+  XLU price  daily  beta -8.1 (se 1.4), n 216
+  XLU price  weekly beta -9.4 (se 3.5), n 45
+  SPY price  daily  beta -4.9 (se 1.3), n 216
+  SPY price  weekly beta -1.1 (se 2.7), n 45

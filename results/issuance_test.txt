@@ -1,0 +1,12 @@
+shares outstanding 30 Jun 2026 -> 13 Nov 2026: +496,220 (1.87% of the June count)
+dividend reinvestment added 28,851 shares in the whole first half, so nearly all of the increase is shelf sales
+at the average close since July ($26.61) that is about $13.2m raised and about $132k of 1% commission
+pace: about 110,920 shares a month since July, against 114,428 a month in 2025
+
+      period  shelf_shares  share_of_eligible_day_volume_pct  mean_premium  max_premium  days_at_or_above_3pct_pct  avg_5d_change_after_1pct_close  n_after_1pct
+        2024         55243                               4.3         -1.85         3.44                          0                           -2.16             4
+        2025       1373141                              11.3          1.97         8.82                         27                           -0.17           138
+     H1 2026             0                               0.0          1.59        10.28                         39                           -0.52            55
+Jul-Nov 2026        496220                               8.7          0.70         4.17                          2                           -0.97            34
+
+reading: 2025 sold about as many shares a month as the period since July, and the premium still averaged about 2% with a quarter of days above 3%. Selling trims the premium, it does not cap it. The premium fell after July because demand fell, with issuance running alongside.

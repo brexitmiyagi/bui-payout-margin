@@ -1,0 +1,27 @@
+
+== BUI, last close 2026-11-13 ==
+  discount -0.64%, 1y mean 1.39, z-score -0.69
+  discount -0.64%, 3y mean 0.12, z-score -0.25
+  discount change: 1 month -0.60, 3 months -0.46 pts
+  price 26.21 vs 50-day avg 25.79, 200-day avg 27.23; RSI(14) 52
+  average daily volume, 1 month: 89,823 shares, $2.35m (median $2.03m)
+  average daily volume, 3 months: 83,481 shares, $2.17m (median $1.90m)
+  average daily volume, 1 year: 88,118 shares, $2.39m (median $2.04m)
+  at 15% of median daily dollar volume an institution can do about $0.28m a day; a $5m position takes 18 days
+  estimated effective spread (Abdi-Ranaldo, last year): 0.81% of price
+  volume vs prior 20-day median around ex-dates (days -2..+2, median of 118 events): 1.13 0.96 0.89 1.03 0.94
+  heaviest 2026 volume days (x prior 20-day median): 2026-03-02 6.4x, 2026-03-03 5.5x, 2026-03-04 5.4x, 2026-03-09 4.8x, 2026-03-06 3.9x
+  rights offering window Mar 1-Apr 15 2026: median 1.26x, max 6.4x on 2026-03-02
+
+== UTF, last close 2026-11-13 ==
+  discount -6.68%, 1y mean -4.94, z-score -0.78
+  discount -6.68%, 3y mean -1.60, z-score -1.37
+  discount change: 1 month -3.68, 3 months -5.23 pts
+  price 25.69 vs 50-day avg 25.56, 200-day avg 26.52; RSI(14) 45
+  average daily volume, 1 month: 229,402 shares, $5.97m (median $5.83m)
+  average daily volume, 3 months: 302,418 shares, $7.75m (median $6.95m)
+  average daily volume, 1 year: 324,592 shares, $8.39m (median $7.89m)
+  at 15% of median daily dollar volume an institution can do about $1.04m a day; a $5m position takes 5 days
+  estimated effective spread (Abdi-Ranaldo, last year): 0.60% of price
+  volume vs prior 20-day median around ex-dates (days -2..+2, median of 122 events): 0.96 1.08 1.00 0.94 0.94
+  heaviest 2026 volume days (x prior 20-day median): 2026-09-14 2.8x, 2026-09-10 2.3x, 2026-09-15 2.2x, 2026-09-16 2.0x, 2026-03-09 2.0x

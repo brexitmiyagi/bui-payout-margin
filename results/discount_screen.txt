@@ -1,0 +1,23 @@
+n = 108 funds, R2 0.34
+  const                -21.252  (t -4.9)
+  dist_rate_nav_pct    +0.535  (t 4.9)
+  nav_return_1y_pct    +0.025  (t 0.8)
+  leverage_pct         +0.127  (t 1.2)
+  log_assets           +1.351  (t 2.3)
+  expense_ratio_pct    -1.859  (t -1.4)
+
+utility, infrastructure and energy-infrastructure funds, cheapest residual first:
+ticker  discount_pct  fitted  residual  dist_rate_nav_pct  nav_return_1y_pct  leverage_pct  expense_ratio_pct  z_1y  change_63d
+   NML        -11.97   -5.91     -6.06               7.38              41.89         25.21               1.07   NaN         NaN
+   KYN        -13.37   -8.25     -5.12               7.09              38.75         25.88               3.30   NaN         NaN
+   TYG         -9.62   -6.54     -3.08              13.51              11.96         25.09               3.13   NaN         NaN
+   EMO        -11.24   -8.33     -2.91               8.77              38.88         25.08               3.12   NaN         NaN
+  MEGI        -11.07  -10.75     -0.32               9.21              14.64         21.30               3.73 -1.06       -2.84
+   DPG        -12.21  -12.30      0.09               5.64              18.48         21.75               3.34 -1.66       -3.37
+   UTF         -6.68   -8.49      1.81               7.21              15.96         28.22               3.43 -0.77       -5.23
+   RFI         -8.04  -10.58      2.54               8.30               9.23          0.04               0.94 -2.07       -4.66
+   UTG         -2.94   -7.25      4.31               7.15              -3.53         22.74               2.09 -2.25       -2.89
+   GLU         -3.32  -10.90      7.58               6.76              13.41         17.54               1.35 -0.14        2.40
+   BUI         -0.33  -10.16      9.83               6.99              14.42          1.28               1.09 -0.41       -0.11
+   DNP          4.33   -6.94     11.27               8.04              13.34         23.12               2.53 -1.02       -8.30
+not in the cross-section (missing a field or an outlier): HTD, ECF, GUT

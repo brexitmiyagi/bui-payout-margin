@@ -1,0 +1,22 @@
+BlackRock CEF rights offering results found on EDGAR since June 2025: 7, about $996m raised
+  2025-06-20 BHK   over-subscribed  ~18.0m shares, ~$166m
+  2025-09-10 BIT   over-subscribed  ~14m shares, ~$186m
+  2025-10-21 BKT   over-subscribed  ~8m shares, ~$87.1m
+  2026-01-27 HYT   over-subscribed  ~32m shares, ~$283m
+  2026-04-03 BUI   undersubscribed  ~2.4m shares, ~$64.6m
+  2026-08-21 MUA   over-subscribed  ~16.8m shares, ~$166m
+  2026-10-22 BCAT  not stated       ~3.3m shares, ~$43m
+SpaceX at 30 Jun 2026 across BlackRock CEFs:
+  BSTZ   431,967 shares, $ 73.8m, 3.1% of net assets, filed under Diversified Telecommunication Services
+  BST    341,635 shares, $ 58.4m, 3.1% of net assets, filed under Diversified Telecommunication Services
+  BTX    225,459 shares, $ 38.5m, 3.1% of net assets, filed under Diversified Telecommunication Services
+  BUI    131,270 shares, $ 22.4m, 3.0% of net assets, filed under Diversified Telecommunication Services
+The seven funds that dropped call writing on 10 Nov 2025, regular monthly payout since:
+  BUI   now $0.154: raised from 0.136 (declared 2026-06-05); specials: 1.174279 incl. regular (ex 2025-12-22)
+  BME   now $0.2621: none; specials: none
+  BST   now $0.25: none; specials: 1.451471 (ex 2025-12-22); 2.3041 (ex 2026-09-15)
+  BSTZ  now $0.1625: cut from 0.21812 (ex 2025-10-15); specials: 0.517116 (ex 2025-12-22); 1.4547 (ex 2026-09-15)
+  BMEZ  now $0.11: cut from 0.16291 (ex 2025-10-15); specials: none
+  BGR   now $0.0973: none; specials: none
+  BCX   now $0.0697: none; specials: none
+BUI rights offering: BlackRock paid $294,540 of costs; 1.00% fee on ~$64.6m is $646,000 a year, so ~5.5 months to earn it back

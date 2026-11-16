@@ -1,0 +1,6 @@
+quarter to 2025-06-30: net assets $566.6m, 156 positions of which 105 derivatives (written calls), monthly NAV returns 3.81% / 5.51% / 3.19%, realised gains $11.5m (options $-4.0m)
+quarter to 2025-09-30: net assets $591.6m, 147 positions of which 94 derivatives (written calls), monthly NAV returns 2.11% / -0.11% / 2.88%, realised gains $21.7m (options $0.4m)
+quarter to 2025-12-31: net assets $587.8m, 49 positions of which 0 derivatives (written calls), monthly NAV returns 0.96% / 1.76% / -1.78%, realised gains $61.1m (options $-4.4m)
+quarter to 2026-03-31: net assets $662.9m, 52 positions of which 0 derivatives (written calls), monthly NAV returns 6.05% / 8.96% / -1.53%, realised gains $22.0m (options $0.0m)
+quarter to 2026-06-30: net assets $741.7m, 54 positions of which 0 derivatives (written calls), monthly NAV returns 3.77% / -2.34% / 1.61%, realised gains $21.2m (options $0.0m)
+realised gains first half 2026 from N-PORT: $43.2m (statement of operations: $43.1m)

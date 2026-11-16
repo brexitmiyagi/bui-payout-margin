@@ -1,0 +1,10 @@
+SO   3.94%  GA      Georgia Power Company
+DUK  3.96%  OH      Duke Energy Ohio
+AEP  3.46%  OH      Ohio Power Company (AEP Ohio)
+NGG  3.92%  NY      Niagara Mohawk (National Grid)
+EXC  2.41%  PA      PECO Energy Company
+FE   1.74%  OH, PA  Ohio Edison; FE PA
+NI   1.67%  OH, PA  Columbia Gas of Ohio; Columbia Gas of Pennsylvania
+share of June 30 net assets in holdings with a regulated utility in GA, PA, OH, NY or AZ: 21.1%
+not counted: NEE (Florida); D (Virginia/Carolinas (East Ohio gas sold to Enbridge, March 2024)); SRE (California/Texas); ETR (Gulf South); CMS (Michigan); XEL (Upper Midwest/Colorado/Texas); PCG (California); CNP (Texas/Indiana/Minnesota (Ohio unit listed as former subsidiary in 10-K; excluded))
+Georgia: S&P Global says the new 3-2 Democratic PSC will oversee Georgia Power's first rate case since 2022. Southern Co was 3.39% of BUI at Oct 30.

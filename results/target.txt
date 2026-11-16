@@ -1,0 +1,6 @@
+weak year (25th pct): NAV return +2.55% -> NAV $25.20, price $25.35 (-3.3% price, +3.8% with distributions), weight 25%
+normal year (5y annualised): NAV return +8.28% -> NAV $26.72, price $26.87 (+2.5% price, +9.6% with distributions), weight 50%
+strong year (75th pct): NAV return +17.36% -> NAV $29.11, price $29.28 (+11.7% price, +18.7% with distributions), weight 25%
+median premium since Nov 2016 +0.56%
+12-month target $27.09 vs $26.21: +3.4% on price, +10.4% with $1.848 of distributions
+rule: Buy above $30.14, Sell below $22.28 (15% either way); NAV return needed to hold NAV flat 7.01%
