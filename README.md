@@ -1,6 +1,6 @@
 # bui-payout-margin
 
-This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: The Fee Is Certain, The Edge Can't Be Proven", and my X thread on utilities losing their stock-market beta in 2026.
+This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: The Fee Is Certain, The Edge Can't Be Proven, And The Tax Bill Just Went Up", and my X thread on utilities losing their stock-market beta in 2026.
 
 The short version: in 2026 utilities lost their link to the stock market and kept their rate risk. BUI's NAV has about 8 years of effective rate duration this year (range 6 to 10.5), close to a 10-year Treasury note, while it pays 7.01% of NAV from a book yielding about 2.8%. The target is built from 10-year scenarios. The Section 19 coverage number has a weak spot at December 31, 2026 and then gets lifted by base effects through 2027.
 
@@ -16,6 +16,8 @@ Each script reads from data/ relative to itself and prints to the screen. My own
 
 ## What each script does
 
+scripts/after_tax_yield.py compares BUI's after-tax yield and annual tax drag with XLU's for a taxable US holder, using BUI's 2025 qualified-dividend designation (85% of ordinary dividends), the 2026 Section 19 mix, XLU's 2025 tax summary (100% qualified) and 2026 federal rates. Top bracket: BUI about 4.8% after tax on this year's mix against XLU's 2.1%; tax paid each year about 2.2 points of price against 0.7.
+
 scripts/style_analysis.py is the main edge test. Constrained style regressions (weights non-negative, summing to 100%) of weekly NAV total returns for BUI, UTF, DNP and GLU on two ETF sets: book-like (XLU, IGF, AMLP, XLI, IEF) and total-return clean (IGF, PUI, GRID, IEF), with 8-week block bootstrap bands and the years of data needed to reach t = 2. BUI over the last five years: -1.6% a year after fees (book-like, band -5.0 to +1.6) and -1.0% (clean); 34 to 71 years of data to settle it.
 
 scripts/vehicle_table.py puts BUI, UTF, DNP, GLU, XLU and IGF side by side: fee, yield, premium or discount, 2026 rate beta on one model, edge, and median daily dollar volume.
@@ -26,7 +28,7 @@ scripts/position_pnl.py gives the one-year P&L on $100,000 of BUI for 10-year mo
 
 scripts/switch_oos.py picks the UTF switch threshold on 2016-2020 only and tests it from 2021 on.
 
-scripts/tax_character.py shows the tax character of BUI's distributions: 2023-2025 final, 2026 estimated (about 70% at ordinary rates so far against 20% in 2025).
+scripts/tax_character.py shows the tax character of BUI's distributions: 2023-2025 final, 2026 estimated (about 44% at ordinary rates so far if income is 85% qualified as in 2025, against 3% in 2025).
 
 scripts/etf_replication.py answers "why not the ETF". It regresses BUI's weekly NAV total return on IGF and IEF total returns (Nasdaq distributions, IGF tied to iShares' published returns within 0.01 points). Alpha after BUI's fees: +3.2% a year over the whole sample (t 1.7), almost all in the covered-call era; -1.3% over the last five years (t -0.5); +0.8% since the calls ended (t 0.2).
 
@@ -74,7 +76,7 @@ scripts/stress_test.py applies a 10-year +150bp and equal-weight S&P -17.5% shoc
 
 scripts/rate_beta_tests.py is the main statistics file. Weekly regressions with Newey-West (HAC, 4 lags) standard errors for BUI's NAV, XLU and the NAVs of UTF, UTG and DNP, on the 10-year change plus the S&P 500, the equal-weight S&P 500 (RSP), semiconductors (SMH) and oil (USO). It also tests 2026 against each earlier year, runs rolling 26-week betas with 95% bands (written to results/rolling_rate_beta.csv), Dimson daily betas for BUI, and the XLU-SPY correlation with a 95% interval.
 
-scripts/duration_and_valuation.py turns the betas into an effective duration (central 8, range 6 to 10.5), compares it with the 10-year note (7.74 at 5.15%), gives the hedge ratio (about $103 of 10-year notes per $100 of BUI), the hedged volatility and carry, and the $26.38 target from 10-year scenarios.
+scripts/duration_and_valuation.py turns the betas into an effective duration (central 8, range 6 to 10.5), compares it with the 10-year note (7.74 at 5.15%), gives the hedge ratio (about $103 of 10-year notes per $100 of BUI), the hedged volatility and carry, and the $26.38 target from 10-year scenarios. The hedged return is about +7.8% a year (corrected 16 Nov 2026, see Corrections).
 
 scripts/target.py is the older history-based target ($27.09). I keep it as a cross-check.
 
@@ -155,6 +157,8 @@ data/blackrock_section19_2026_10_30.csv is my transcription of the equity trusts
 data/etf_prices_daily.csv and data/etf_distributions.csv are XLU, IGF and IEF closes and IGF and IEF distributions from Nasdaq. XLU's dividend history isn't on Nasdaq, so XLU enters the replication as a price return only. data/valuation_snapshot_2026_11_13.csv has the State Street and iShares figures with links. data/blackrock_shelf_issuance_2023_2026.csv and data/blackrock_weekly_premium_by_year.csv are the platform issuance dataset.
 
 data/vehicle_prices_volumes_daily.csv has DNP and GLU closes and volumes and XLU and IGF volumes from Nasdaq. etf_prices_daily.csv now also has AMLP, XLI, PUI and GRID; etf_distributions.csv adds PUI and GRID. peer_distributions.csv adds DNP's monthly $0.065 from CEF Connect.
+
+data/us_tax_rates_2026.csv has the 2026 federal rates with IRS sources. data/qualified_dividend_designations_2025.csv has BUI's and XLU's 2025 qualified dividends. data/bui_borrow_2026_11_16.csv is the borrow fee and availability for shorting BUI (IBorrowDesk, from Interactive Brokers).
 
 ## Sources
 
@@ -260,4 +264,6 @@ CEF Connect showed BUI at -0.33% on Nov 13 against -0.64% on BlackRock's own $26
 
 ## Corrections
 
-None so far.
+16 Nov 2026: duration_and_valuation.py and position_pnl.py charged the hedge the full 10-year yield (5.15%). A short Treasury position also earns roughly the bill rate on its proceeds, so the hedge costs the 10-year yield minus the 3-month bill rate (about 0.86 points). The hedged position earns about 7.8% a year before premium changes, not 3.4%. The old 3.4% was close to the hedged return in excess of bills, but it was labelled as the return itself. Both scripts are fixed.
+
+16 Nov 2026: tax_character.py said about 70% of 2026's payout would be taxed at ordinary rates. That counted all net income as ordinary. BUI designated 85% of its 2025 ordinary dividends as qualified, so the estimate is about 44% if 2026 is similar. Fixed, and after_tax_yield.py added.
