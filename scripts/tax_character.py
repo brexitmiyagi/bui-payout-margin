@@ -22,6 +22,9 @@ s = pd.read_csv(os.path.join(DATA, "section19_notices_2026.csv")).iloc[-1]
 tot = s.ytd_distributions
 p("2026 to Oct 30 (estimate): net income %.0f%%, short-term gains %.0f%%, long-term gains %.0f%%, return of capital %.0f%%" %
   (s.ytd_net_income / tot * 100, s.ytd_st_gains / tot * 100, s.ytd_lt_gains / tot * 100, s.ytd_return_of_capital / tot * 100))
-p("so about %.0f%% of 2026's payout so far would be taxed at ordinary rates (income plus short-term gains), against %.0f%% in 2025" %
-  ((s.ytd_net_income + s.ytd_st_gains) / tot * 100, b[b.year == 2025].ordinary_income.iloc[0] / b[b.year == 2025].total.iloc[0] * 100))
+p("note: 'ordinary income' here includes qualified dividends. In 2025, $10,784,769 of BUI's $12,635,567 of ordinary"
+  " dividends (85%) was designated qualified, so 97% of 2025's payout was taxed at preferential rates.")
+p("2026 so far: short-term gains alone are %.0f%% of the payout and are taxed at ordinary rates; if net income is 85%%"
+  " qualified again, about %.0f%% of the payout is taxed at ordinary rates (after_tax_yield.py)" %
+  (s.ytd_st_gains / tot * 100, (s.ytd_st_gains + 0.15 * s.ytd_net_income) / tot * 100))
 open(os.path.join(RES, "tax_character.txt"), "w").write("\n".join(out) + "\n")

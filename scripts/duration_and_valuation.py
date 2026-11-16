@@ -55,4 +55,10 @@ print(f"weighted 12-month target ${tgt:.2f} vs ${price0:.2f}: {tgt/price0-1:+.1%
 for Dx in (D_lo, D_hi):
     t2 = sum(w*(nav0*(1 + flat/100 - Dx*(ye-y10)/100) - pay)*(1+pr/100) for _, ye, w, pr in cases)
     print(f"  with duration {Dx}: target ${t2:.2f}")
-print(f"hedged carry: rates-flat {flat:.2f}% minus {D_c/dmod:.2f} x 10-year yield {y10:.2f}% = {flat - D_c/dmod*y10:+.2f}% a year before premium changes")
+# hedge carry: a short note position pays the coupon (about the 10-year yield) but earns interest on the sale
+# proceeds at roughly the bill/repo rate; futures embed the same yield-minus-financing carry. So the hedge costs
+# the 10-year yield minus the 3-month bill rate, not the whole yield. (An earlier version of this script charged
+# the full yield, which understated the hedged return.)
+y3m = float(curve['3 Mo'])
+cost = D_c/dmod*(y10 - y3m)
+print(f"hedged carry: rates-flat {flat:.2f}% minus {D_c/dmod:.2f} x (10-year {y10:.2f}% - 3-month bill {y3m:.2f}%) = {flat - cost:+.2f}% a year before premium changes")
