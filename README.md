@@ -1,6 +1,6 @@
 # bui-payout-margin
 
-This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: Fair At NAV, With A Fee The Last Five Years Don't Justify", and my X thread on utilities losing their stock-market beta in 2026.
+This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: The Fee Is Certain, The Edge Can't Be Proven", and my X thread on utilities losing their stock-market beta in 2026.
 
 The short version: in 2026 utilities lost their link to the stock market and kept their rate risk. BUI's NAV has about 8 years of effective rate duration this year (range 6 to 10.5), close to a 10-year Treasury note, while it pays 7.01% of NAV from a book yielding about 2.8%. The target is built from 10-year scenarios. The Section 19 coverage number has a weak spot at December 31, 2026 and then gets lifted by base effects through 2027.
 
@@ -15,6 +15,18 @@ From anywhere:
 Each script reads from data/ relative to itself and prints to the screen. My own output is saved in results/.
 
 ## What each script does
+
+scripts/style_analysis.py is the main edge test. Constrained style regressions (weights non-negative, summing to 100%) of weekly NAV total returns for BUI, UTF, DNP and GLU on two ETF sets: book-like (XLU, IGF, AMLP, XLI, IEF) and total-return clean (IGF, PUI, GRID, IEF), with 8-week block bootstrap bands and the years of data needed to reach t = 2. BUI over the last five years: -1.6% a year after fees (book-like, band -5.0 to +1.6) and -1.0% (clean); 34 to 71 years of data to settle it.
+
+scripts/vehicle_table.py puts BUI, UTF, DNP, GLU, XLU and IGF side by side: fee, yield, premium or discount, 2026 rate beta on one model, edge, and median daily dollar volume.
+
+scripts/target_band.py simulates the target inputs (10-year move at option-implied volatility, duration, growth, non-rate return, premium): median $26.58, 10th to 90th percentile $21.47 to $31.78.
+
+scripts/position_pnl.py gives the one-year P&L on $100,000 of BUI for 10-year moves of -100 to +100bp, unhedged at durations of 6, 8 and 10.5 and hedged with 10-year notes, plus sizing for a 1% volatility budget. Illustrative, not advice.
+
+scripts/switch_oos.py picks the UTF switch threshold on 2016-2020 only and tests it from 2021 on.
+
+scripts/tax_character.py shows the tax character of BUI's distributions: 2023-2025 final, 2026 estimated (about 70% at ordinary rates so far against 20% in 2025).
 
 scripts/etf_replication.py answers "why not the ETF". It regresses BUI's weekly NAV total return on IGF and IEF total returns (Nasdaq distributions, IGF tied to iShares' published returns within 0.01 points). Alpha after BUI's fees: +3.2% a year over the whole sample (t 1.7), almost all in the covered-call era; -1.3% over the last five years (t -0.5); +0.8% since the calls ended (t 0.2).
 
@@ -142,6 +154,8 @@ data/blackrock_section19_2026_10_30.csv is my transcription of the equity trusts
 
 data/etf_prices_daily.csv and data/etf_distributions.csv are XLU, IGF and IEF closes and IGF and IEF distributions from Nasdaq. XLU's dividend history isn't on Nasdaq, so XLU enters the replication as a price return only. data/valuation_snapshot_2026_11_13.csv has the State Street and iShares figures with links. data/blackrock_shelf_issuance_2023_2026.csv and data/blackrock_weekly_premium_by_year.csv are the platform issuance dataset.
 
+data/vehicle_prices_volumes_daily.csv has DNP and GLU closes and volumes and XLU and IGF volumes from Nasdaq. etf_prices_daily.csv now also has AMLP, XLI, PUI and GRID; etf_distributions.csv adds PUI and GRID. peer_distributions.csv adds DNP's monthly $0.065 from CEF Connect.
+
 ## Sources
 
 BUI semi-annual report (N-CSRS), June 30, 2026: https://www.sec.gov/Archives/edgar/data/1528988/000119312526381618/d311167dncsrs.htm
@@ -185,6 +199,10 @@ CII at-the-market supplement, July 27, 2026: https://www.sec.gov/Archives/edgar/
 BST at-the-market supplement, May 29, 2026: https://www.sec.gov/Archives/edgar/data/1616678/000119312526248381/d81899d424b5.htm
 
 Cboe delayed option quotes for IEF: https://cdn-api.cboe.com/api/global/delayed_quotes/options/IEF.json
+
+XLU distribution yield 2.77%, XLI 1.11% (State Street fund pages, Nov 12 2026): https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu and https://www.ssga.com/us/en/intermediary/etfs/state-street-industrial-select-sector-spdr-etf-xli
+
+AMLP trailing twelve-month yield 8.10% and expenses 1.01% (ALPS, Nov 13 2026): https://www.alpsfunds.com/exchange-traded-funds/amlp
 
 ## Things to be careful with
 
@@ -233,6 +251,12 @@ The own-history discount model is a loose fit (R-squared 0.22 for BUI, 0.05 for 
 The ETF replication uses ETFs that hold different things from BUI (IGF is global infrastructure, IEF is Treasuries). None of the alphas is significant at 5%.
 
 FedWatch odds in the post come from press reports of CME data (Investing.com, November 10; The Motley Fool, November 16), not from CME's page directly.
+
+The book-like style set uses price returns for XLU, AMLP and XLI and takes off weight x today's trailing yield. Yields moved over the decade, so that adjustment is approximate. The 53-week results since BUI dropped calls are fitted on the same weeks they're measured on.
+
+I've run about two dozen tests on this fund. One or two could clear 5% by chance. The post leans only on results that hold across methods.
+
+CEF Connect showed BUI at -0.33% on Nov 13 against -0.64% on BlackRock's own $26.38 NAV. I use BlackRock and Nasdaq.
 
 ## Corrections
 
