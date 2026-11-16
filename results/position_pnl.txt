@@ -1,10 +1,10 @@
 one-year P&L on $100,000 of BUI, premium unchanged ($):
  10y_move_bp  unhedged_D6  unhedged_D8  unhedged_D10.5  hedged_D8  hedged_D6  hedged_D10.5
-        -100        14700        16700           19200       3423       1423          5923
-         -50        11700        12700           13950       3409       2409          4659
-           0         8700         8700            8700       3395       3395          3395
-          50         5700         4700            3450       3382       4382          2132
-         100         2700          700           -1800       3368       5368           868
+        -100        14700        16700           19200       7873       5873         10373
+         -50        11700        12700           13950       7859       6859          9109
+           0         8700         8700            8700       7845       7845          7845
+          50         5700         4700            3450       7831       8831          6581
+         100         2700          700           -1800       7817       9817          5317
 
 sizing for a 1% annual volatility budget: unhedged 13.6% vol -> 7.4% of the portfolio; hedged 12.2% -> 8.2%
-the hedge removes the rate bet and about 1.4 points of volatility; what's left is about +3.4% a year of carry before premium changes
+the hedge removes the rate bet and about 1.4 points of volatility; what's left is about 7.8% a year before premium changes

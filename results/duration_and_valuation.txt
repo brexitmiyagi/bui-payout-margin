@@ -11,4 +11,4 @@ rates-flat NAV return: 2.76% dividends + 7.0% EPS growth - 1.06% expenses = 8.70
 weighted 12-month target $26.38 vs $26.21: +0.6% on price, +7.7% with distributions
   with duration 6.0: target $26.41
   with duration 10.5: target $26.33
-hedged carry: rates-flat 8.70% minus 1.03 x 10-year yield 5.15% = +3.38% a year before premium changes
+hedged carry: rates-flat 8.70% minus 1.03 x (10-year 5.15% - 3-month bill 4.32%) = +7.84% a year before premium changes

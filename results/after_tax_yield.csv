@@ -1,0 +1,9 @@
+bracket,vehicle,yield,tax_rate,after_tax_yield,tax_drag_pts
+top bracket (37% / 20% + 3.8% NIIT),BUI 2025 mix,7.05,24.3,5.34,1.71
+top bracket (37% / 20% + 3.8% NIIT),BUI 2026 mix,7.05,31.3,4.84,2.21
+top bracket (37% / 20% + 3.8% NIIT),"BUI 2026, income all ordinary",7.05,35.7,4.53,2.52
+top bracket (37% / 20% + 3.8% NIIT),XLU (100% qualified),2.77,23.8,2.11,0.66
+"24% bracket (24% / 15%, no NIIT)",BUI 2025 mix,7.05,15.3,5.97,1.08
+"24% bracket (24% / 15%, no NIIT)",BUI 2026 mix,7.05,19.0,5.71,1.34
+"24% bracket (24% / 15%, no NIIT)","BUI 2026, income all ordinary",7.05,21.3,5.55,1.5
+"24% bracket (24% / 15%, no NIIT)",XLU (100% qualified),2.77,15.0,2.35,0.42

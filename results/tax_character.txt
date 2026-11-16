@@ -2,4 +2,5 @@
 2024 final: ordinary income 17%, long-term gains 59%, return of capital 24%
 2025 final: ordinary income 20%, long-term gains 80%, return of capital 0%
 2026 to Oct 30 (estimate): net income 30%, short-term gains 40%, long-term gains 30%, return of capital 0%
-so about 70% of 2026's payout so far would be taxed at ordinary rates (income plus short-term gains), against 20% in 2025
+note: 'ordinary income' here includes qualified dividends. In 2025, $10,784,769 of BUI's $12,635,567 of ordinary dividends (85%) was designated qualified, so 97% of 2025's payout was taxed at preferential rates.
+2026 so far: short-term gains alone are 40% of the payout and are taxed at ordinary rates; if net income is 85% qualified again, about 44% of the payout is taxed at ordinary rates (after_tax_yield.py)
