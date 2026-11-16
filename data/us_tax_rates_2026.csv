@@ -1,0 +1,6 @@
+item,value,source
+top ordinary rate,37,IRS Rev. Proc. 2025-32 (https://www.irs.gov/pub/irs-drop/rp-25-32.pdf): over $640600 single / $768700 joint
+24% bracket,24,IRS Rev. Proc. 2025-32: $105700-$201750 single / $211400-$403550 joint
+qualified dividends and long-term gains top rate,20,IRS Rev. Proc. 2025-32: over $545500 single / $613700 joint
+qualified dividends and long-term gains middle rate,15,IRS Rev. Proc. 2025-32: $49451-$545500 single / $98901-$613700 joint
+net investment income tax,3.8,https://www.irs.gov/individuals/net-investment-income-tax (MAGI over $200000 single / $250000 joint)

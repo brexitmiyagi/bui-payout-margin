@@ -1,0 +1,2 @@
+date,ticker,borrow_fee_pct,shares_available,source
+2026-11-16,BUI,2.42,85000,IBorrowDesk (Interactive Brokers data) https://www.iborrowdesk.com/report/BUI updated Nov 16 2026 10:13 AM
