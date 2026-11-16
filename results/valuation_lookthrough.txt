@@ -1,0 +1,13 @@
+XLU forward P/E 18.25 -> earnings yield 5.48% vs 10-year 5.15%: gap +0.33 points
+
+BUI book income yield (before BUI's costs) vs the average 10-year:
+                 year  book_income_yield  avg_10y   gap
+                 2021               2.05     1.45  0.60
+                 2022               2.45     2.95 -0.50
+                 2023               2.64     3.96 -1.32
+                 2024               2.36     4.21 -1.84
+                 2025               2.29     4.29 -2.01
+2026 (H1, annualised)               2.81     4.31 -1.50
+note: 2021-2025 is the covered-call era; option premium is booked as gains, not income, so it isn't in this yield
+
+target at 7% growth $26.38; at FactSet's 9.42% for XLU $27.01; each point of growth is worth $0.26

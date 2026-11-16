@@ -1,0 +1,28 @@
+
+covered-call era, Nov 2016 to Nov 7 2025 (468 weeks)
+  BUI NAV = 0.83 x IGF + 0.08 x IEF; R2 0.85; tracking error 6.1% a year
+  alpha after BUI's fees: +3.20% a year (t 1.6)
+  adding XLU (price only): R2 0.86, XLU weight 0.17
+  annualised: BUI NAV TR 10.87%, BUI price TR 11.39%, IGF TR 8.73%, IEF TR 1.23%
+
+since dropping calls, Nov 14 2025 to Nov 13 2026 (53 weeks)
+  BUI NAV = 1.05 x IGF + -0.12 x IEF; R2 0.76; tracking error 6.2% a year
+  alpha after BUI's fees: +0.75% a year (t 0.2)
+  adding XLU (price only): R2 0.87, XLU weight 0.39
+  annualised: BUI NAV TR 13.44%, BUI price TR 12.52%, IGF TR 11.80%, IEF TR -3.07%
+
+last five years (261 weeks)
+  BUI NAV = 0.95 x IGF + -0.01 x IEF; R2 0.84; tracking error 5.7% a year
+  alpha after BUI's fees: -1.28% a year (t -0.5)
+  adding XLU (price only): R2 0.85, XLU weight 0.16
+  annualised: BUI NAV TR 8.24%, BUI price TR 6.96%, IGF TR 10.24%, IEF TR -1.68%
+
+whole sample (521 weeks)
+  BUI NAV = 0.84 x IGF + 0.08 x IEF; R2 0.85; tracking error 6.1% a year
+  alpha after BUI's fees: +3.20% a year (t 1.7)
+  adding XLU (price only): R2 0.86, XLU weight 0.19
+  annualised: BUI NAV TR 11.13%, BUI price TR 11.50%, IGF TR 9.04%, IEF TR 0.79%
+
+fees: BUI 1.06% (H1 2026 expense ratio), IGF 0.37%, IEF 0.15% (issuer pages, Nov 2026). Alpha above is after BUI's fees and before the ETFs' fees, which their total returns already carry.
+tie-out IGF 5y to 30 Sep 2026: mine 9.26%, iShares market price 9.26%
+tie-out IGF 1y to 30 Sep 2026: mine 3.80%, iShares market price 3.80%

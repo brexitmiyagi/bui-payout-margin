@@ -12,3 +12,11 @@ UTF, month-end 2017-11-30 to 2026-11-30, n=109, R2 0.05
   y10        -0.528 (t -0.7)
   navtr12    -0.006 (t -0.1)
   latest: discount -6.68, fitted -1.69, residual -4.99 (-1.0 standard deviations), residual percentile 18
+
+IS THE 10-YEAR LINK REAL? changes on changes, BUI
+  unit-root test p-values (monthly levels): discount 0.000, 10-year 0.909
+  monthly since 2017: -1.51 pts of discount per 1 pt of 10-year (t -1.4), R2 0.012, n 119
+  monthly since 2023: -2.13 pts of discount per 1 pt of 10-year (t -1.4), R2 0.029, n 47
+  weekly  since 2017: -1.85 pts of discount per 1 pt of 10-year (t -2.2), R2 0.012, n 515
+  weekly  since 2023: -0.91 pts of discount per 1 pt of 10-year (t -0.9), R2 0.004, n 202
+  reading: same sign as the levels regression, but weak, and it explains about 1% of moves

@@ -1,0 +1,17 @@
+ticker period  shelf_shares_issued  pct_weeks_at_or_above_1  mean_premium  max_premium
+   BME   2023                71333                        4         -3.86         4.56
+   BST   2023              1266090                       36          0.68         4.97
+   BUI   2023               167658                        8         -2.04         4.40
+   BDJ   2024                    0                        0         -9.66        -3.64
+   BME   2024                    0                        0         -7.14        -0.84
+   BST   2024               236917                        2         -3.55         1.30
+   BUI   2024                55243                        4         -1.91         1.49
+   BDJ   2025                    0                        0         -5.89        -4.18
+   BST   2025                    0                        0         -5.37        -2.96
+   BUI   2025              1373141                       52          1.79         7.80
+
+fund-years with sales: 6, median share of weeks at +1% or more: 6%, median max premium 4.48%
+fund-years with no sales: 4, median share of weeks at +1% or more: 0%
+the two big selling years (over 1 million shares): BST 2023: 1,266,090 shares, premium at +1%+ in 36% of weeks, peak +4.97%, BUI 2025: 1,373,141 shares, premium at +1%+ in 52% of weeks, peak +7.80%
+reading: BlackRock sells when a premium appears and sells most when it lasts. Selling has not stopped premiums of 5% to 8% appearing in those same years. BUI also sold nothing in the first half of 2026, around its rights offering, when its weekly premium reached 9.9%.
+commission retained by BlackRock Investments in 2025 on BUI's sales: $70,353 (2025 annual report)
