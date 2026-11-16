@@ -16,6 +16,8 @@ Each script reads from data/ relative to itself and prints to the screen. My own
 
 ## What each script does
 
+scripts/pair_exit_backtest.py tests the UTF/BUI pair with the exit rule the post states (exit when the spread is back at its one-year median, or after 12 months): 13 trades since 2016, 12 won, average +4.9 points over about 31 trading days, before roughly 1.4 points of spread costs and borrow.
+
 scripts/after_tax_yield.py compares BUI's after-tax yield and annual tax drag with XLU's for a taxable US holder, using BUI's 2025 qualified-dividend designation (85% of ordinary dividends), the 2026 Section 19 mix, XLU's 2025 tax summary (100% qualified) and 2026 federal rates. Top bracket: BUI about 4.8% after tax on this year's mix against XLU's 2.1%; tax paid each year about 2.2 points of price against 0.7.
 
 scripts/style_analysis.py is the main edge test. Constrained style regressions (weights non-negative, summing to 100%) of weekly NAV total returns for BUI, UTF, DNP and GLU on two ETF sets: book-like (XLU, IGF, AMLP, XLI, IEF) and total-return clean (IGF, PUI, GRID, IEF), with 8-week block bootstrap bands and the years of data needed to reach t = 2. BUI over the last five years: -1.6% a year after fees (book-like, band -5.0 to +1.6) and -1.0% (clean); 34 to 71 years of data to settle it.
