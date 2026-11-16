@@ -1,6 +1,6 @@
 # bui-payout-margin
 
-This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: Fair At NAV, And Rates Hit It Twice", and my X thread on utilities losing their stock-market beta in 2026.
+This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: Fair At NAV, With A Fee The Last Five Years Don't Justify", and my X thread on utilities losing their stock-market beta in 2026.
 
 The short version: in 2026 utilities lost their link to the stock market and kept their rate risk. BUI's NAV has about 8 years of effective rate duration this year (range 6 to 10.5), close to a 10-year Treasury note, while it pays 7.01% of NAV from a book yielding about 2.8%. The target is built from 10-year scenarios. The Section 19 coverage number has a weak spot at December 31, 2026 and then gets lifted by base effects through 2027.
 
@@ -16,9 +16,17 @@ Each script reads from data/ relative to itself and prints to the screen. My own
 
 ## What each script does
 
+scripts/etf_replication.py answers "why not the ETF". It regresses BUI's weekly NAV total return on IGF and IEF total returns (Nasdaq distributions, IGF tied to iShares' published returns within 0.01 points). Alpha after BUI's fees: +3.2% a year over the whole sample (t 1.7), almost all in the covered-call era; -1.3% over the last five years (t -0.5); +0.8% since the calls ended (t 0.2).
+
+scripts/valuation_lookthrough.py puts XLU's forward earnings yield (5.48%) against the 10-year (5.15%), tracks the income yield of BUI's own book against the 10-year by year (+0.6 points in 2021, about -2.3 now), and shows the target at FactSet's 9.42% growth ($27.01) against my 7% ($26.38).
+
+scripts/platform_issuance.py lines up BlackRock's shelf sales by equity CEF and year (2023 to mid-2026) against how often each fund traded at a premium.
+
+scripts/fed_path.py reads the Fed path out of the November 13 Treasury curve (about 100bp of tightening from 1-month bills to the 1y1y forward).
+
 scripts/issuance_test.py checks whether BlackRock actually sells BUI shares into the premium and whether that caps it. Shares outstanding rose 496,220 (1.87%) from June 30 to November 13; the shelf sold 1,373,141 shares in 2025 and none in the first half of 2026. 2025 sold at about the same monthly pace as since July and the premium still averaged about 2%, so selling trims the premium rather than capping it.
 
-scripts/discount_own_history.py compares BUI's discount with its own history since 2017 (monthly, on its distribution rate, the 10-year and its trailing NAV return). Today's discount is within 0.6 points of fitted. Each 1-point rise in the 10-year has come with about a 1.1-point wider discount (t -3.1).
+scripts/discount_own_history.py compares BUI's discount with its own history since 2017 (monthly, on its distribution rate, the 10-year and its trailing NAV return). That levels regression overstates the 10-year link (the 10-year has a unit root, p 0.91), so the script also runs changes on changes: about -1.5 points of discount per 1-point rise in the 10-year monthly (t -1.4) and -1.9 weekly (t -2.2), explaining about 1% of moves. The post treats it as a weak, same-signed nudge.
 
 scripts/switch_backtest.py is the UTF switch test. It flags every day since November 2016 when UTF's discount minus BUI's was 5 or more points below its own trailing one-year median and measures UTF minus BUI total return over the next 12 months (12 episodes, UTF won 9, average +9.6 points; all signal days 73% hit rate and +5.6 points against 57% and -0.7 on all days; block bootstrap about 0.11). It also fits weekly half-lives for each discount and the spread (BUI about 4 weeks, UTF and the spread about 7 to 8), the mid-November to year-end and January seasonality, and BUI's premium before and since the July 1 at-the-market supplement.
 
@@ -132,6 +140,8 @@ data/bui_ohlcv_daily.csv and data/utf_ohlcv_daily.csv are daily open, high, low,
 
 data/blackrock_section19_2026_10_30.csv is my transcription of the equity trusts in BlackRock's October 30, 2026 Section 19 notice. data/blackrock_tax_character_2023_2025.csv is the "tax character of distributions paid" tables from BlackRock's 2024 and 2025 annual reports. data/utf_events_2019_2026.csv lists UTF's corporate events with links.
 
+data/etf_prices_daily.csv and data/etf_distributions.csv are XLU, IGF and IEF closes and IGF and IEF distributions from Nasdaq. XLU's dividend history isn't on Nasdaq, so XLU enters the replication as a price return only. data/valuation_snapshot_2026_11_13.csv has the State Street and iShares figures with links. data/blackrock_shelf_issuance_2023_2026.csv and data/blackrock_weekly_premium_by_year.csv are the platform issuance dataset.
+
 ## Sources
 
 BUI semi-annual report (N-CSRS), June 30, 2026: https://www.sec.gov/Archives/edgar/data/1528988/000119312526381618/d311167dncsrs.htm
@@ -219,6 +229,10 @@ peers_relative_value.py and rate_beta_tests.py run the same model (10-year, RSP,
 Shares outstanding after June 30 are two points only (June 30 report, November 13 product page). There is no daily issuance series, so issuance is tested by period, not by day.
 
 The own-history discount model is a loose fit (R-squared 0.22 for BUI, 0.05 for UTF), so I don't lean on UTF's residual.
+
+The ETF replication uses ETFs that hold different things from BUI (IGF is global infrastructure, IEF is Treasuries). None of the alphas is significant at 5%.
+
+FedWatch odds in the post come from press reports of CME data (Investing.com, November 10; The Motley Fool, November 16), not from CME's page directly.
 
 ## Corrections
 
