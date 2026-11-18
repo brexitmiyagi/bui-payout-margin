@@ -1,0 +1,12 @@
+item,value,source
+announced,2026-02-27,BUI 497AD Feb 27 2026 https://www.sec.gov/Archives/edgar/data/1528988/000119312526083074/d110238d497ad.htm
+record date,2026-03-09,same
+expiration,2026-04-02,same; result 497AD https://www.sec.gov/Archives/edgar/data/1528988/000119312526140992/d123774d497ad.htm
+rights,"transferable, one right per share, four rights per new share, over-subscription privilege for record-date holders",same
+price formula,"95% of the average NYSE close over the expiration date and four prior days, cut to $0.01 below NAV if at or above NAV; but not less than 95% of NAV on the expiration date",same and 424B2 https://www.sec.gov/Archives/edgar/data/1528988/000119312526100062/d15508d424b2.htm
+NAV and price in the prospectus supplement,"NAV $27.38 and price $30.09 on March 6, 2026 (premium 9.90%)",424B2
+shares offered,6019793,result 497AD
+shares issued,"more than 2.4 million (about 40% of the offer); undersubscribed",result 497AD
+subscription price,26.37,"result 497AD: 95% of the April 2 NAV"
+proceeds,"about $64.6 million, expenses paid by the adviser",result 497AD
+dilution booked,-0.10 a share,BUI N-CSRS June 30 2026 financial highlights
