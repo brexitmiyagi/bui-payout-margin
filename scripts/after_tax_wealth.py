@@ -6,7 +6,7 @@ year it's paid at BUI's mix, reinvest what's left (which raises the cost basis),
 gains tax on whatever gain is left. The difference in after-tax annual return is what the vehicle really costs.
 
 Same book for both: 2.76% income plus 7% growth before fees, rates flat (the target's rates-flat case). BUI nets
-1.06% of fees and pays 7.05% of price a year; XLU nets 0.08% and pays 2.77%, all qualified. BUI's price stays at NAV.
+1.06% of fees and pays 7.05% of price a year; XLU nets 0.08% and pays 2.79%, all qualified. BUI's price stays at NAV.
 
 Two views:
   tax only: both earn BUI's 8.70% before tax, so the gap is tax alone.
@@ -36,7 +36,7 @@ pref26 = s19.ytd_net_income / t * qshare + s19.ytd_lt_gains / t
 
 GROSS = 2.76 + 7.0
 FEE = {"BUI": 1.06, "XLU": 0.08}
-YLD = {"BUI": 0.154 * 12 / 26.21 * 100, "XLU": 2.77}
+YLD = {"BUI": 0.154 * 12 / 25.99 * 100, "XLU": 2.79}   # Nov 17: BUI price $25.99; XLU distribution yield 2.79% (State Street)
 BRACKETS = {"top (37% / 20% + 3.8% NIIT)": (40.8, 23.8), "24% (24% / 15%)": (24.0, 15.0)}
 
 

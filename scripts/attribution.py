@@ -1,9 +1,10 @@
-"""Where BUI's year since dropping covered calls came from.
+"""Where BUI's year since dropping covered calls came from (31 Dec 2025 to 13 Nov 2026).
 
 The regression in style_analysis.py says BUI beat an ETF mix by 5 to 8 points in the 53 weeks after it stopped writing
 calls (10 November 2025), but can't say why. Here I use the holdings instead. I split the year into four pieces:
 
-  stub   14 Nov 2025 to 31 Dec 2025   December 31 book, start weights backed out of the end weights, US-listed names
+  (14 Nov to 31 Dec 2025 is left out: the book was rebuilt from 147 positions to 49 then, so no quarter-end snapshot
+   describes it)
   Q1     31 Dec 2025 to 31 Mar 2026   December 31 book, every position priced from the two N-PORTs
   Q2     31 Mar 2026 to 30 Jun 2026   March 31 book, same
   H2     30 Jun 2026 to 13 Nov 2026   June 30 book, US-listed names from Nasdaq (September's N-PORT isn't out yet)
@@ -129,8 +130,9 @@ def piece(label, b, a, z, source, back_out=False):
 
 
 SECT = []
-pieces = [("stub", book("2025-12-31"), "2025-11-14", "2025-12-31", "listed", True),
-          ("Q1 2026", book("2025-12-31"), "2025-12-31", "2026-03-31", "nport", False),
+# The seven weeks from 14 Nov to 31 Dec 2025 are left out. BUI rebuilt its book then (147 positions on Sep 30,
+# 49 on Dec 31), so backing start weights out of the December book would assume away exactly the trading that happened.
+pieces = [("Q1 2026", book("2025-12-31"), "2025-12-31", "2026-03-31", "nport", False),
           ("Q2 2026", book("2026-03-31"), "2026-03-31", "2026-06-30", "nport", False),
           ("H2 to Nov 13", book("2026-06-30"), "2026-06-30", "2026-11-13", "listed", False)]
 rows, bb, nm = [], [], []
@@ -177,11 +179,11 @@ p("\nreconciliation, year: NAV total return %+.1f%% vs holdings price return %+.
 t["unexplained"] = t.nav_tr - t.holdings - (2.8 - 1.06) / 100 * (pd.to_datetime(t.end) - pd.to_datetime(t.start)).dt.days / 365
 p("NAV return not explained by priced holdings plus income less fees, by piece (points): " +
   ", ".join("%s %+.1f" % (r.piece, r.unexplained * 100) for r in t.itertuples() if r.piece != "year"))
-p("  the April 2026 rights offering sold about 2.4m shares near $26.9 against a NAV near $27.7, about -0.25 of NAV,"
-  " so it doesn't explain the gap; in the two fully priced quarters the rest is trading inside the quarter")
+p("  the April 2026 rights offering sold about 2.4m shares at $26.37, 95% of the April 2 NAV of $27.76; the N-CSRS books it"
+  " as -$0.10 a share (about -0.4% of NAV), so it widens the gap rather than explaining it. See nav_gap.py.")
 
 # daily test on the US-listed sleeve
-segs = [(book("2025-12-31"), "2025-11-14", "2026-03-31"), (book("2026-03-31"), "2026-03-31", "2026-06-30"),
+segs = [(book("2025-12-31"), "2025-12-31", "2026-03-31"), (book("2026-03-31"), "2026-03-31", "2026-06-30"),
         (book("2026-06-30"), "2026-06-30", "2026-11-13")]
 act = []
 for b, a, z in segs:

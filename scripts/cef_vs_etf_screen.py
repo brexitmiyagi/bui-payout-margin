@@ -26,6 +26,10 @@ p = lambda *a: (print(*a), out.append(" ".join(str(x) for x in a)))
 u = pd.read_csv(os.path.join(DATA, "equity_cef_universe_2026_11_13.csv"))
 f = pd.read_csv(os.path.join(DATA, "category_etf_fees_2026_11.csv")).set_index("category_prefix")
 u = u.join(f, on="category")
+# discounts: CEF Connect's own final history for the latest close (mostly November 17), not the live snapshot from the
+# evening of November 13, which was off by more than a quarter point for 29 funds (cef_connect_timing.py)
+h = pd.read_csv(os.path.join(DATA, "cef_connect_history_2026_11_18.csv")).set_index("ticker")
+u["discount_pct"] = u.ticker.map(h.latest_discount).fillna(u.discount_pct)
 assert u.etf_expense_pct.notna().all()
 R, YRS = 0.08, 5
 u["fee_gap"] = u.expense_ratio_pct - u.etf_expense_pct
@@ -37,7 +41,7 @@ u["discount_minus_breakeven"] = u.discount - u.breakeven_discount_5y
 cols = ["ticker", "category_meaning", "matching_etf", "expense_ratio_pct", "etf_expense_pct", "discount_pct",
         "dist_rate_nav_pct", "breakeven_discount_5y", "discount_minus_breakeven", "edge_if_discount_stays", "leverage_pct"]
 s = u[cols].sort_values("edge_if_discount_stays", ascending=False)
-p("108 equity CEFs, November 13, 2026, tax-deferred account")
+p("108 equity CEFs, discounts at the latest close in CEF Connect's history (mostly November 17, 2026), tax-deferred account")
 p("  pass on both tests (discount above its 5-year breakeven, and a positive edge if the discount never closes): %d"
   % ((u.discount_minus_breakeven > 0) & (u.edge_if_discount_stays > 0)).sum())
 p("  fail both: %d" % ((u.discount_minus_breakeven <= 0) & (u.edge_if_discount_stays <= 0)).sum())

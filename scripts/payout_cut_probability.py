@@ -8,7 +8,7 @@ So the trigger I test is the payout running above a given share of NAV at two qu
 own record) as the central case and 7.5% and 9.0% either side. At $0.154 a month, 8.1% of NAV is a NAV of $22.81.
 
 NAV paths: 12-month blocks of BUI's own monthly NAV total returns resampled, the payout taken out each month, run from
-the November 13 NAV to December 2027. Two return pools: every month since November 2016, and the last five years only.
+the latest NAV to December 2027. Two return pools: every month since November 2016, and the last five years only.
 """
 import os, random
 import pandas as pd
@@ -58,7 +58,7 @@ for name, pool in pools.items():
     end = sorted(pt[-1] for pt in paths)
     p("%s: Dec 2027 NAV 10th pct $%.2f, median $%.2f, 90th $%.2f" % (name, end[N//10], end[N//2], end[9*N//10]))
 t = pd.DataFrame(rows)
-p("\nNov 13 NAV $%.2f, payout $%.3f a month = %.2f%% of NAV" % (nav0, PAY, PAY * 12 / nav0 * 100))
+p("\nlatest NAV $%.2f, payout $%.3f a month = %.2f%% of NAV" % (nav0, PAY, PAY * 12 / nav0 * 100))
 p(t.to_string(index=False))
 t.to_csv(os.path.join(RES, "payout_cut_probability.csv"), index=False)
 open(os.path.join(RES, "payout_cut_probability.txt"), "w").write("\n".join(out) + "\n")
