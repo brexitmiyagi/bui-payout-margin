@@ -1,0 +1,32 @@
+June 30, 2026: 54 positions, top ten 39.6% of net assets, top twenty 65.2%
+
+by bucket (% of net assets, positions):
+                                      sum  count
+bucket                                          
+US regulated utilities               40.2     14
+pipelines and LNG                    13.8      4
+rail airports and toll roads         10.2      4
+non-US utilities and grid operators   9.5      5
+renewables and storage                8.5     10
+grid and electrification equipment    8.3     11
+space and satellites                  4.1      2
+cash                                  3.2      2
+industrial gases                      3.2      2
+
+US-listed or US-domiciled: 66.1%; outside the US: 35.0%
+
+October 30 top ten (BlackRock): 43.0% of net assets
+                               name  weight_pct
+                 NextEra Energy Inc        6.04
+          Union Pacific Corporation        5.94
+                        Aena SME SA        4.96
+                  National Grid PLC        3.95
+                Cheniere Energy Inc        3.91
+         The Williams Companies Inc        3.84
+American Electric Power Company Inc        3.74
+               Targa Resources Corp        3.67
+                     TC Energy Corp        3.57
+             Southern Company (The)        3.39
+
+outside utilities (pipelines, rail, airports, gases, equipment, renewables, space): 48.1% of net assets
+not held on June 30: the US independent power producers (Vistra, Constellation, Talen, NRG) and GE Vernova
