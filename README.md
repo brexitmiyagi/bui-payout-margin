@@ -24,6 +24,14 @@ scripts/after_tax_wealth.py holds BUI and XLU for 5 and 10 years on the same boo
 
 scripts/holdings_lookthrough.py groups the June 30, 2026 N-PORT into buckets (my grouping, in data/holding_buckets.csv) and lists BlackRock's October 30 top ten: US regulated utilities 40.2%, pipelines and LNG 13.8%, rail, airports and toll roads 10.2%, top ten 43.0%.
 
+scripts/attribution.py splits BUI's year since dropping covered calls (14 Nov 2025 to 13 Nov 2026) into sector bets, stock picks and the 2026 IPOs, from the December, March and June N-PORTs, against the five-year book-like ETF mix. Price only on both sides. Year: holdings +7.4% against +7.0% for the mix; sector bets -2.1 points (mostly the utilities weight), stock picks +3.4 (best: Targa, Union Pacific, Cheniere), IPOs -0.4. NAV total return was +13.4%, and about 1.6 points of it in the two fully priced quarters is trading between quarter-ends that the books can't see. A daily test on the US-listed names puts stock picks at +3.8% a year with 4.1% tracking error, t = 0.9, which would take about five years to reach t = 2.
+
+scripts/valuation_same_basis.py compares BUI's US-listed names (75% of net assets) with XLU rebuilt from the 31 S&P 500 utilities, both on Nasdaq consensus EPS for the fiscal year nearest December 2027. Without the 2026 IPOs: BUI 17.0 times with 8.6% growth the year after, XLU 16.6 times with 9.6%.
+
+scripts/payout_cut_probability.py puts a probability on a cut to the $0.154 monthly payout by December 2027, with the trigger set from what BlackRock has done (BUI paid 8.1% of NAV in March 2020 without cutting). At that trigger, a NAV under $22.81 at two quarter-ends in a row, about 2% to 3%; at 7.5% of NAV, 15% to 21%.
+
+scripts/cef_vs_etf_screen.py runs the same vehicle question across 108 equity CEFs for a tax-deferred account: the discount that pays for five years of the fee gap, and what you earn each year if the discount never closes. 28 pass both tests, 39 fail both, BUI fails both.
+
 scripts/style_analysis.py is the main edge test. Constrained style regressions (weights non-negative, summing to 100%) of weekly NAV total returns for BUI, UTF, DNP and GLU on two ETF sets: book-like (XLU, IGF, AMLP, XLI, IEF) and total-return clean (IGF, PUI, GRID, IEF), with 8-week block bootstrap bands and the years of data needed to reach t = 2. BUI over the last five years: -1.6% a year after fees (book-like, band -5.0 to +1.6) and -1.0% (clean); 34 to 71 years of data to settle it.
 
 scripts/vehicle_table.py puts BUI, UTF, DNP, GLU, XLU and IGF side by side: costs before and with leverage, on one basis from each fund's latest report, yield, premium or discount, 2026 rate beta on one model, edge, and median daily dollar volume.
@@ -164,6 +172,8 @@ data/etf_prices_daily.csv and data/etf_distributions.csv are XLU, IGF and IEF cl
 
 data/vehicle_prices_volumes_daily.csv has DNP and GLU closes and volumes and XLU and IGF volumes from Nasdaq. etf_prices_daily.csv now also has AMLP, XLI, PUI and GRID; etf_distributions.csv adds PUI and GRID. peer_distributions.csv adds DNP's monthly $0.065 from CEF Connect.
 
+data/listed_holdings_daily_2025_2026.csv has Nasdaq daily closes for every US-listed name BUI held at December, March or June, November 2025 to November 2026. data/proxy_etf_prices_daily.csv has the bucket ETFs not already in etf_prices_daily.csv (JXI, MLPX, ICLN, XLB). data/holdings_map.csv maps each holding's ISIN to its US ticker and my bucket. data/consensus_eps_2026_11_18.csv is the Nasdaq consensus EPS snapshot, and data/sp500_utilities_2026_11.csv the 31 S&P 500 utilities from Wikipedia's S&P 500 list. data/category_etf_fees_2026_11.csv has the matching ETF and its fee for each CEF category, with links.
+
 data/us_tax_rates_2026.csv has the 2026 federal rates with IRS sources. data/qualified_dividend_designations_2025.csv has BUI's and XLU's 2025 qualified dividends. data/bui_borrow_2026_11_16.csv is the borrow fee and availability for shorting BUI (IBorrowDesk, from Interactive Brokers).
 
 ## Sources
@@ -267,6 +277,8 @@ The book-like style set uses price returns for XLU, AMLP and XLI and takes off w
 I've run about two dozen tests on this fund. One or two could clear 5% by chance. The post leans only on results that hold across methods.
 
 CEF Connect showed BUI at -0.33% on Nov 13 against -0.64% on BlackRock's own $26.38 NAV. I use BlackRock and Nasdaq.
+
+Things to be careful with in the newer scripts: the attribution is price only and uses quarter-end books, so it can't see trading between them; the bucket ETFs are rough stand-ins (IGF for rail and airports most of all); after June 30 only the US-listed names have prices until September's N-PORT. The payout triggers come from BlackRock's behaviour, not a stated rule. The CEF screen charges leveraged funds their borrowing costs without crediting the extra return, and gives every sector fund a 0.08% sector ETF.
 
 ## Corrections
 
