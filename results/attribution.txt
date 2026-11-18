@@ -1,60 +1,59 @@
 price-only, % (priced_weight is the share of the book with its own price in that piece):
        piece      start        end  priced_weight  holdings  sectors  benchmark  sector_bets  stock_picks_ex_ipo  ipos  nav_tr
-        stub 2025-11-14 2025-12-31          75.38     -1.98    -1.97      -1.01        -0.96               -0.01  0.00   -0.37
      Q1 2026 2025-12-31 2026-03-31          98.27     12.94    10.11       7.64         2.47                2.83  0.00   13.75
      Q2 2026 2026-03-31 2026-06-30          97.72      1.37     1.76       2.76        -1.00               -0.39  0.00    2.97
 H2 to Nov 13 2026-06-30 2026-11-13          77.11     -4.28    -4.86      -2.28        -2.58                1.00 -0.42   -2.83
-        year 2025-11-14 2026-11-13            NaN      7.42     4.51       7.01        -2.07                3.43 -0.42   13.40
+        year 2025-12-31 2026-11-13            NaN      9.59     6.60       8.09        -1.11                3.44 -0.42   13.82
 
-year: holdings +7.4%, benchmark mix +7.0%, gap +0.4 points
-  sector bets -2.1, stock picks +3.4, IPOs -0.4, compounding cross-terms -0.5
+year: holdings +9.6%, benchmark mix +8.1%, gap +1.5 points
+  sector bets -1.1, stock picks +3.4, IPOs -0.4, compounding cross-terms -0.4
 
 stock picks plus IPOs by bucket (points of fund return):
-                                     stub  Q1 2026  Q2 2026  H2 to Nov 13  year
-bucket                                                                         
-renewables and storage               0.04     0.25    -0.96         -0.19 -0.86
-space and satellites                 0.00     0.00     0.00         -0.29 -0.29
-US power producers                   0.02    -0.21    -0.01          0.00 -0.20
-waste                               -0.01    -0.01    -0.12          0.00 -0.14
-industrial gases and materials      -0.07     0.12    -0.03         -0.02 -0.01
-grid and electrification equipment  -0.05     0.30    -0.12         -0.13 -0.00
-cash                                 0.00     0.00     0.00          0.00  0.00
-non-US utilities and grid operators  0.11     0.32    -0.00          0.09  0.51
-pipelines and LNG                   -0.28     0.47     0.01          1.07  1.26
-rail airports and toll roads         0.31    -0.36     0.82          0.59  1.35
-US regulated utilities              -0.06     1.95     0.02         -0.52  1.38
+                                     Q1 2026  Q2 2026  H2 to Nov 13  year
+bucket                                                                   
+renewables and storage                  0.25    -0.96         -0.19 -0.89
+space and satellites                    0.00     0.00         -0.29 -0.29
+US power producers                     -0.21    -0.01          0.00 -0.22
+waste                                  -0.01    -0.12          0.00 -0.13
+cash                                    0.00     0.00          0.00  0.00
+grid and electrification equipment      0.30    -0.12         -0.13  0.05
+industrial gases and materials          0.12    -0.03         -0.02  0.06
+non-US utilities and grid operators     0.32    -0.00          0.09  0.40
+rail airports and toll roads           -0.36     0.82          0.59  1.04
+US regulated utilities                  1.95     0.02         -0.52  1.45
+pipelines and LNG                       0.47     0.01          1.07  1.55
 
 sector bets by bucket: weight x (bucket ETF - benchmark mix), points:
-                                     stub  Q1 2026  Q2 2026  H2 to Nov 13  year
-bucket                                                                         
-US regulated utilities              -1.10    -0.05    -1.65         -0.24 -3.04
-renewables and storage              -0.22     0.32     0.84         -1.73 -0.79
-space and satellites                 0.00     0.00     0.00         -0.26 -0.26
-non-US utilities and grid operators -0.16     0.21    -0.43          0.17 -0.21
-cash                                 0.04    -0.20    -0.05          0.12 -0.08
-US power producers                  -0.03    -0.00    -0.03          0.00 -0.06
-grid and electrification equipment   0.11    -0.07     1.06         -1.16 -0.06
-waste                                0.03    -0.03     0.08          0.00  0.08
-rail airports and toll roads        -0.03     0.16    -0.34          0.29  0.09
-industrial gases and materials       0.22     0.11    -0.04          0.16  0.45
-pipelines and LNG                    0.17     2.02    -0.46          0.07  1.81
+                                     Q1 2026  Q2 2026  H2 to Nov 13  year
+bucket                                                                   
+US regulated utilities                 -0.05    -1.65         -0.24 -1.94
+renewables and storage                  0.32     0.84         -1.73 -0.57
+space and satellites                    0.00     0.00         -0.26 -0.26
+grid and electrification equipment     -0.07     1.06         -1.16 -0.17
+cash                                   -0.20    -0.05          0.12 -0.12
+non-US utilities and grid operators     0.21    -0.43          0.17 -0.05
+US power producers                     -0.00    -0.03          0.00 -0.03
+waste                                  -0.03     0.08          0.00  0.05
+rail airports and toll roads            0.16    -0.34          0.29  0.12
+industrial gases and materials          0.11    -0.04          0.16  0.23
+pipelines and LNG                       2.02    -0.46          0.07  1.64
 
 largest single-name contributions vs their bucket ETF over the year (points):
 isin
-First Solar                    -0.36
-Sempra                         -0.36
-PG&E                           -0.34
-Primoris Services              -0.34
-SpaceX                         -0.29
-Prysmian                        0.49
-Canadian Pacific Kansas City    0.49
-Cheniere Energy                 0.71
-Union Pacific                   0.90
-Targa Resources                 1.02
+First Solar         -0.46
+PG&E                -0.36
+Sempra              -0.35
+Primoris Services   -0.34
+SpaceX              -0.29
+Entergy              0.42
+Prysmian             0.49
+Union Pacific        0.72
+Targa Resources      0.90
+Cheniere Energy      1.00
 
-reconciliation, year: NAV total return +13.4% vs holdings price return +7.4%; the difference (+6.0) is income (about 2.8% a year), less 1.06% of fees, plus trading within quarters and the parts I can't price
-NAV return not explained by priced holdings plus income less fees, by piece (points): stub +1.4, Q1 2026 +0.4, Q2 2026 +1.2, H2 to Nov 13 +0.8
-  the April 2026 rights offering sold about 2.4m shares near $26.9 against a NAV near $27.7, about -0.25 of NAV, so it doesn't explain the gap; in the two fully priced quarters the rest is trading inside the quarter
+reconciliation, year: NAV total return +13.8% vs holdings price return +9.6%; the difference (+4.2) is income (about 2.8% a year), less 1.06% of fees, plus trading within quarters and the parts I can't price
+NAV return not explained by priced holdings plus income less fees, by piece (points): Q1 2026 +0.4, Q2 2026 +1.2, H2 to Nov 13 +0.8
+  the April 2026 rights offering sold about 2.4m shares at $26.37, 95% of the April 2 NAV of $27.76; the N-CSRS books it as -$0.10 a share (about -0.4% of NAV), so it widens the gap rather than explaining it. See nav_gap.py.
 
-daily test, US-listed sleeve, 2025-11-17 to 2026-11-13 (250 days): stock picks vs bucket ETFs +3.8% a year, tracking error 4.1%, t = 0.9
-  years to reach t = 2 at this edge and tracking error: 4.6
+daily test, US-listed sleeve, 2026-01-02 to 2026-11-13 (219 days): stock picks vs bucket ETFs +4.5% a year, tracking error 4.2%, t = 1.0
+  years to reach t = 2 at this edge and tracking error: 3.4

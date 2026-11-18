@@ -1,0 +1,17 @@
+                      point       date  price   nav  premium_pct  utf_premium_pct   xlu
+30 days before announcement 2026-01-28  27.39 25.86         5.92            -4.56 43.33
+                  announced 2026-02-27  30.59 28.10         8.86            -7.99 47.73
+         prospectus (Mar 6) 2026-03-06  30.09 27.38         9.90            -8.43 46.74
+                record date 2026-03-09  28.26 27.40         3.14            -8.91 46.85
+   two weeks into the offer 2026-03-20  25.79 26.45        -2.50            -8.36 44.65
+                 expiration 2026-04-02  26.34 27.76        -5.12            -8.10 46.34
+            two weeks after 2026-04-16  26.92 27.64        -2.60            -6.98 46.35
+              a month after 2026-05-04  27.87 28.02        -0.54            -6.74 46.37
+                    June 30 2026-06-30  29.01 27.94         3.83            -1.53 45.34
+
+at expiration: formula price 95% x five-day average close $26.28 = $24.97; floor 95% x NAV $27.76 = $26.37; subscription price $26.37 (filed $26.37)
+market close on expiration day $26.34, so subscribing cost $0.03 a share more than buying on the exchange
+premium fell from +8.86% at announcement to -5.12% at expiration, 14.0 points, while NAV went from $28.10 to $27.76
+trading days in the offer period with the premium above +5%: 6 of 25; below 0: 16
+UTF's discount over the same window: -7.99% to -8.10%, so the slide was BUI's own, not the sector's
+offer: 6,019,793 shares; issued a bit over 2.4m (about 40%); dilution booked at -$0.10 a share in the N-CSRS

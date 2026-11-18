@@ -1,0 +1,7 @@
+dated share counts: 2026-06-25 26,541,625, 2026-06-30 26,548,823, 2026-11-13 27,045,043, 2026-11-17 27,045,043
+2026-06-25 to 2026-06-30: 7,198 shares; 3 trading days, 3 with a premium of +1% or more (3 at +2% or more); 2,399 shares per eligible day
+2026-06-30 to 2026-11-13: 496,220 shares; 96 trading days, 34 with a premium of +1% or more (8 at +2% or more); 14,595 shares per eligible day
+2026-11-13 to 2026-11-17: 0 shares; 2 trading days, 0 with a premium of +1% or more (0 at +2% or more)
+
+July 1 to November 13: premium above +1% on 34 days, the last on 2026-10-29; it was below +1% on every day after that
+what the daily log needs: rows on enough days with and without a +1% premium to see whether the count only moves on premium days. At the current premium (+0.46% on November 17) the shelf can't sell, so the first test is whether the count stays flat until the premium clears +1%.

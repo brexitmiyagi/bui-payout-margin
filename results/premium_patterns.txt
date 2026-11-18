@@ -1,0 +1,17 @@
+1. SNAP-BACK, 2016-12-12 to 2026-11-10
+   next 1 day(s) change in premium on distance from 20-day average: slope -0.12 (t -3.8), R2 0.04
+   next 5 day(s) change in premium on distance from 20-day average: slope -0.31 (t -4.3), R2 0.08
+   the premium's own pull toward its long-run average: half-life about 16 trading days
+   rule: buy when the premium is 1.5 sd under its 60-day average, hold five days: 76 trades, average gain over NAV +0.72 points, 60% positive, before a round-trip spread of about 0.8
+   after the spread: -0.08 points a trade
+
+2. EX-DATES
+   change in premium on regular ex-dates: average +0.06 points, median +0.04 (120 dates); all other days -0.001
+   special ex 2025-12-22 ($1.17): premium 5 days before +2.72, day before +6.27, ex-date +7.23, 10 days after +4.60
+
+3. PRICE AGAINST SAME-DAY NAV
+   price return on today's NAV return 0.86 (t 13.1) and yesterday's 0.10 (t 1.2)
+   since BUI dropped calls: today 0.61 (t 10.3), yesterday 0.26 (t 3.5)
+   since dropping calls, days NAV beat price by more than 1.0 point: 31; next day price beat NAV by +0.42 points on average (67% of the time), against a round trip of about 0.8
+   since dropping calls, days NAV beat price by more than 1.5 point: 18; next day price beat NAV by +0.24 points on average (61% of the time), against a round trip of about 0.8
+   days the price and NAV returns differ by more than 1 point: 22.4% of days
