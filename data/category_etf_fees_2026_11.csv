@@ -1,0 +1,10 @@
+category_prefix,category_meaning,matching_etf,etf_expense_pct,source
+U.S. E,US equity,IVV,0.03,https://www.ishares.com/us/products/239726/ishares-core-sp-500-etf (as of current prospectus; read 18 Nov 2026)
+Global,global equity,ACWI,0.32,https://www.ishares.com/us/products/239600/ishares-msci-acwi-etf (read 18 Nov 2026)
+Asia E,Asia equity,AAXJ,0.72,https://www.ishares.com/us/products/239601/ishares-msci-all-country-asia-ex-japan-etf (read 18 Nov 2026)
+Emergi,emerging markets equity,IEMG,0.09,https://www.ishares.com/us/products/244050/ishares-core-msci-emerging-markets-etf (read 18 Nov 2026)
+Real E,real estate,USRT,0.08,https://www.ishares.com/us/products/239544/ishares-core-us-reit-etf (read 18 Nov 2026)
+Single,single country,EWJ (as a typical iShares country ETF),0.49,https://www.ishares.com/us/products/239665/ishares-msci-japan-etf (read 18 Nov 2026)
+Covere,covered call,JEPI,0.35,https://www.tradingview.com/symbols/AMEX-JEPI/analysis (read 18 Nov 2026; secondary source)
+Sector,sector equity,a Select Sector SPDR such as XLU,0.08,https://www.ssga.com/us/en/intermediary/etfs/state-street-utilities-select-sector-spdr-etf-xlu (XLU 0.08%; other sector funds may need a different ETF)
+MLP,MLPs,AMLP,1.01,https://www.alpsfunds.com/exchange-traded-funds/amlp (ALPS; 13 Nov 2026)
