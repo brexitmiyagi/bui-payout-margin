@@ -15,3 +15,7 @@ for tk, name, n, ipo, when in book:
     print(f"{name}: {n:,} shares, IPO ${ipo:.2f} ({when}), 30 Jun ${a:.2f} (${n*a/1e6:.2f}m), 13 Nov ${b:.2f} (${n*b/1e6:.2f}m), "
           f"{b/ipo-1:+.1%} vs IPO")
 print(f"together: ${t0/1e6:.1f}m on 30 Jun, ${t1/1e6:.1f}m on 13 Nov if held, {(t1-t0)/shares:+.2f} a BUI share")
+# Against the IPO prices: did the three add to the year since BUI dropped its calls? Valued at IPO price (whether
+# BUI paid exactly that isn't disclosed), the three together, as a share of the June 30 net assets ($741.7m).
+c0 = sum(n*ipo for _, _, n, ipo, _ in book)
+print(f"at IPO prices ${c0/1e6:.1f}m, 13 Nov ${t1/1e6:.1f}m: {(t1-c0)/1e6:+.1f}m, {(t1-c0)/741.66e6:+.2%} of June 30 net assets")

@@ -55,8 +55,13 @@ d = pd.Timestamp("2026-11-13")
 price = {"BUI": bui.bui_close[d], "UTF": fac.utf_price[d], "DNP": veh.dnp_close[d], "GLU": fac.glu_price[d],
          "XLU": etf.xlu_close[d], "IGF": etf.igf_close[d]}
 navs = {"BUI": bui.bui_nav[d], "UTF": fac.utf_nav[d], "DNP": fac.dnp_nav[d], "GLU": fac.glu_nav[d]}
-fee = {"BUI": "1.06%", "UTF": "1.33% (3.03% with leverage)", "DNP": "2.53% incl. leverage", "GLU": "1.35%",
-       "XLU": "0.08%", "IGF": "0.37%"}
+# Costs on one basis, in two columns. Without leverage: management and operating costs. With leverage: plus interest
+# on borrowings. GLU's leverage is preferred stock, whose dividends aren't an expense, so it has no second figure.
+# BUI: H1 2026 N-CSRS. UTF: H1 2026 N-CSRS. DNP: FY to Oct 31 2025 N-CSR ("Operating expenses, without leverage"
+# 0.95%, "Operating expenses" 2.53%). GLU: H1 2026 N-CSRS, annualised. ETFs: issuer pages, November 2026.
+fee_ex = {"BUI": "1.06%", "UTF": "1.33%", "DNP": "0.95%", "GLU": "1.13%", "XLU": "0.08%", "IGF": "0.37%"}
+fee_lev = {"BUI": "1.06% (no leverage)", "UTF": "3.03%", "DNP": "2.53%", "GLU": "n/a (preferred, not an expense)",
+           "XLU": "0.08%", "IGF": "0.37%"}
 yld = {"BUI": 0.154 * 12 / price["BUI"] * 100, "UTF": 0.165 * 12 / price["UTF"] * 100,
        "DNP": 0.065 * 12 / price["DNP"] * 100, "GLU": 0.11 * 12 / price["GLU"] * 100, "XLU": 2.77, "IGF": 2.93}
 dv = lambda c, v: (c * v).iloc[-63:].median() / 1e6
@@ -71,7 +76,7 @@ for f in ["BUI", "UTF", "DNP", "GLU", "XLU", "IGF"]:
         disc = "%+.2f%%" % ((price[f] / navs[f] - 1) * 100)
     else:
         edge, disc = "benchmark", "n/a (ETF)"
-    rows.append({"vehicle": f, "fee": fee[f], "yield_on_price": "%.2f%%" % yld[f], "premium_discount": disc,
+    rows.append({"vehicle": f, "cost_ex_leverage": fee_ex[f], "cost_with_leverage": fee_lev[f], "yield_on_price": "%.2f%%" % yld[f], "premium_discount": disc,
                  "rate_beta_2026": "%.1f (t %.1f)" % beta[f], "edge_vs_book_like_mix_5y": edge,
                  "median_daily_dollar_volume": "$%.1fm" % liq[f]})
 t = pd.DataFrame(rows)
