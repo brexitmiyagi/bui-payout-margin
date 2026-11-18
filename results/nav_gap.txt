@@ -1,5 +1,7 @@
 1. half to June 30, per share: filed realised + unrealised gains $4.07; buy-and-hold from the December book would give $3.56 (24.56 x 14.5%); unexplained $0.51, 2.1% of the starting NAV
    portfolio turnover in the half: 23% (2025: 76%), so a quarter of the book changed hands inside those six months
+1b. in dollars: filed realised + unrealised $100.2m; buy-and-hold $85.5m (Q1 $76.0m, Q2 $9.1m, rights money $0.3m at 0.53%); gap $14.7m, 2.2% of average net assets, or $13.2m after the most the payouts could account for
+   per share that's about $0.58 on 25.2m average shares, against the $0.51 from the financial highlights, so the balancing-figure problem doesn't make the gap go away
 2. securities lending $1,406, 0.000% of average net assets; tax reclaims net of fee $241,372, 0.036%; total investment income 1.41% for the half
    rights offering: booked as -$0.10 a share of dilution, so it pushes the gap the other way
 3. daily, 2026-01-05 to 2026-11-13 (218 days): NAV on priced US names and IGF, R2 0.92. Residual on the S&P 500: today 0.101 (t 4.0), yesterday 0.015 (t 1.0)
@@ -8,4 +10,4 @@
    biggest days: 2026-06-15 +0.86, 2026-05-06 +0.64, 2026-06-10 -0.61, 2026-06-23 -0.59, 2026-06-29 +0.58, 2026-03-31 +0.56
    by quarter: 2026Q1 +0.5, 2026Q2 +2.3, 2026Q3 +0.3, 2026Q4 -1.8
 
-reading: the half to June 30 has about 2 points of gains that a buy-and-hold book can't produce, a quarter of the book turned over, securities lending and tax reclaims are each under 0.05%, the rights offering cut NAV, and there's no sign of late foreign marks. The best explanation left is trading inside the quarter. Currency can't be separated from stock moves for the unpriced foreign names until September's N-PORT is out.
+reading: the half to June 30 has about 2 points of gains that a buy-and-hold book can't produce, a quarter of the book turned over, securities lending and tax reclaims are each under 0.05%, the rights offering cut NAV, and there's no sign of late foreign marks. What's left is consistent with gains from trading inside the quarter; the filings can't prove it was skill rather than timing. Currency can't be separated from stock moves for the unpriced foreign names until September's N-PORT is out.
