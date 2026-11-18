@@ -1,6 +1,6 @@
 # bui-payout-margin
 
-This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: The Fee Is Certain, The Edge Can't Be Proven, And The Tax Bill Just Went Up", and my X thread on utilities losing their stock-market beta in 2026.
+This is the data and code behind my Seeking Alpha piece on BlackRock Utilities, Infrastructure & Power Opportunities Trust (BUI), November 2026: "BUI: The Fee Is Certain, The Edge Can't Be Proven", and my X thread on utilities losing their stock-market beta in 2026.
 
 The short version: in 2026 utilities lost their link to the stock market and kept their rate risk. BUI's NAV has about 8 years of effective rate duration this year (range 6 to 10.5), close to a 10-year Treasury note, while it pays 7.01% of NAV from a book yielding about 2.8%. The target is built from 10-year scenarios. The Section 19 coverage number has a weak spot at December 31, 2026 and then gets lifted by base effects through 2027.
 
@@ -18,11 +18,15 @@ Each script reads from data/ relative to itself and prints to the screen. My own
 
 scripts/pair_exit_backtest.py tests the UTF/BUI pair with the exit rule the post states (exit when the spread is back at its one-year median, or after 12 months): 13 trades since 2016, 12 won, average +4.9 points over about 31 trading days, before roughly 1.4 points of spread costs and borrow.
 
-scripts/after_tax_yield.py compares BUI's after-tax yield and annual tax drag with XLU's for a taxable US holder, using BUI's 2025 qualified-dividend designation (85% of ordinary dividends), the 2026 Section 19 mix, XLU's 2025 tax summary (100% qualified) and 2026 federal rates. Top bracket: BUI about 4.8% after tax on this year's mix against XLU's 2.1%; tax paid each year about 2.2 points of price against 0.7.
+scripts/after_tax_yield.py compares BUI's after-tax yield and annual tax drag with XLU's for a taxable US holder, using BUI's 2025 qualified-dividend designation (85% of ordinary dividends), the 2026 Section 19 mix, XLU's 2025 tax summary (100% qualified) and 2026 federal rates. Top bracket: BUI about 4.8% after tax on this year's mix against XLU's 2.1%; tax paid each year about 2.2 points of price against 0.7. That's tax paid, not tax cost, see after_tax_wealth.py.
+
+scripts/after_tax_wealth.py holds BUI and XLU for 5 and 10 years on the same book, taxes each distribution in the year it's paid, reinvests the rest and taxes the gain at the sale. Top bracket, this year's mix, five years: BUI's real tax cost is about 0.66 points a year (0.16 on 2025's mix), and with the fee gap BUI trails XLU by about 1.45 points after tax. It also gives the discount at purchase that leaves BUI level with XLU at the end, selling at NAV: about 4.4% in an IRA, 6.2% in the 24% bracket and 7.9% in the top bracket over five years, roughly double over ten.
+
+scripts/holdings_lookthrough.py groups the June 30, 2026 N-PORT into buckets (my grouping, in data/holding_buckets.csv) and lists BlackRock's October 30 top ten: US regulated utilities 40.2%, pipelines and LNG 13.8%, rail, airports and toll roads 10.2%, top ten 43.0%.
 
 scripts/style_analysis.py is the main edge test. Constrained style regressions (weights non-negative, summing to 100%) of weekly NAV total returns for BUI, UTF, DNP and GLU on two ETF sets: book-like (XLU, IGF, AMLP, XLI, IEF) and total-return clean (IGF, PUI, GRID, IEF), with 8-week block bootstrap bands and the years of data needed to reach t = 2. BUI over the last five years: -1.6% a year after fees (book-like, band -5.0 to +1.6) and -1.0% (clean); 34 to 71 years of data to settle it.
 
-scripts/vehicle_table.py puts BUI, UTF, DNP, GLU, XLU and IGF side by side: fee, yield, premium or discount, 2026 rate beta on one model, edge, and median daily dollar volume.
+scripts/vehicle_table.py puts BUI, UTF, DNP, GLU, XLU and IGF side by side: costs before and with leverage, on one basis from each fund's latest report, yield, premium or discount, 2026 rate beta on one model, edge, and median daily dollar volume.
 
 scripts/target_band.py simulates the target inputs (10-year move at option-implied volatility, duration, growth, non-rate return, premium): median $26.58, 10th to 90th percentile $21.47 to $31.78.
 
@@ -90,7 +94,7 @@ scripts/payout_simulation.py resamples 12-month blocks of BUI's monthly NAV retu
 
 scripts/discount_event_study.py compares discounts before BlackRock announced the end of call writing and now, for the seven funds that dropped it, the four BlackRock funds that kept options, and 97 other equity CEFs.
 
-scripts/ipo_sleeve.py covers the three 2026 IPO names in the June book (SpaceX, Fervo Energy, SOLV Energy): IPO price, June 30 and November 13 values, about -$0.25 a BUI share if still held.
+scripts/ipo_sleeve.py covers the three 2026 IPO names in the June book (SpaceX, Fervo Energy, SOLV Energy): IPO price, June 30 and November 13 values, about -$0.25 a BUI share if still held. Valued at their IPO prices, the three were worth about $0.8 million less on November 13 (-0.11% of June 30 net assets), so they don't explain BUI's strong year since dropping calls.
 
 scripts/blackrock_platform.py puts BUI next to the rest of BlackRock's CEF platform: seven rights offerings since June 2025 (about $1.0bn raised), SpaceX at 3.0-3.1% of net assets in four BlackRock CEFs, what the seven funds that dropped call writing did with their payouts, and how fast the rights offering fee pays back BlackRock's costs (about 5.5 months).
 
@@ -269,3 +273,7 @@ CEF Connect showed BUI at -0.33% on Nov 13 against -0.64% on BlackRock's own $26
 16 Nov 2026: duration_and_valuation.py and position_pnl.py charged the hedge the full 10-year yield (5.15%). A short Treasury position also earns roughly the bill rate on its proceeds, so the hedge costs the 10-year yield minus the 3-month bill rate (about 0.86 points). The hedged position earns about 7.8% a year before premium changes, not 3.4%. The old 3.4% was close to the hedged return in excess of bills, but it was labelled as the return itself. Both scripts are fixed.
 
 16 Nov 2026: tax_character.py said about 70% of 2026's payout would be taxed at ordinary rates. That counted all net income as ordinary. BUI designated 85% of its 2025 ordinary dividends as qualified, so the estimate is about 44% if 2026 is similar. Fixed, and after_tax_yield.py added.
+
+18 Nov 2026: the article compared BUI's annual tax bill with XLU's (about 1.5 points a year in the top bracket) as if it were a cost like a fee. It isn't all cost, because an XLU holder pays tax on the gains later, when they sell. after_tax_wealth.py measures the real cost on after-tax wealth at the end of the hold: about 0.7 points a year over five years on this year's mix. The new-money threshold for a top-bracket taxable account moves from about 10% to about 8% for a five-year hold.
+
+18 Nov 2026: vehicle_table.py mixed bases for costs (UTF before leverage, DNP with it) and had GLU at 1.35%. All four funds are now shown before and with leverage costs from their latest reports; GLU is 1.13% annualised in its June 30, 2026 semi-annual report and DNP 0.95% before leverage.
