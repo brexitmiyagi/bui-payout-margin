@@ -1,0 +1,12 @@
+XLU rebuilt (S&P 500 utilities, cap-weighted) P/E 16.6 (earnings yield 6.04%), next-year EPS growth 9.6%, 31 names
+  tie-out: State Street's own XLU P/E on FY1 earnings was 18.25 on November 13; different year and weights
+BUI names covered: 74.7% of net assets
+BUI, US-listed names (June 30 weights)     P/E 17.5 (earnings yield 5.71%), next-year EPS growth 13.9%, 32 names
+BUI, US-listed, without the 2026 IPOs      P/E 17.0 (earnings yield 5.89%), next-year EPS growth 8.6%, 29 names
+BUI's US utilities only                    P/E 16.8 (earnings yield 5.97%), next-year EPS growth 8.5%, 14 names
+the same utilities at XLU-style cap weights P/E 17.0 (earnings yield 5.89%), next-year EPS growth 8.4%, 14 names
+BUI's US-listed non-utilities (ex IPOs)    P/E 17.3 (earnings yield 5.79%), next-year EPS growth 8.8%, 15 names
+
+SpaceX's consensus more than doubles from 2027 to 2028, so the growth figure with the IPOs is mostly SpaceX; use the ex-IPO line
+P/E over growth in points: XLU 1.72, BUI US-listed ex IPOs 1.98
+tie-out: FactSet's 3-5 year EPS growth for XLU via State Street was 9.42%; my rebuilt next-year figure is 9.6%
