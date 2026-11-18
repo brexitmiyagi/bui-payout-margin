@@ -40,6 +40,32 @@ p("1. half to June 30, per share: filed realised + unrealised gains $%.2f; buy-a
 p("   portfolio turnover in the half: %d%% (2025: 76%%), so a quarter of the book changed hands inside those six months"
   % fh.turnover_pct)
 
+# 1b. the same check in dollars, because the per-share gains line in the financial highlights is a balancing figure
+# and BUI issued about 2.4m shares in April. Statement of operations, six months to June 30, 2026: realised plus
+# unrealised gains in dollars. Buy-and-hold in dollars: each quarter's starting net assets (N-PORT) times that quarter's
+# buy-and-hold holdings return, plus the rights money ($64.7m in, April 2) earning the book's return from April 2 to
+# June 30. For that piece I take Q2's holdings return net of the NAV's move from March 31 to April 2, which assumes the
+# book moved with the NAV over those two days. Distributions paid out of the fund ($20.7m in the half) would lower the
+# invested base a little; at most they're worth the half's return on half of that amount, shown as a bound.
+so = pd.read_csv(os.path.join(DATA, "statement_totals.csv")).set_index("period").loc["H1 2026"]
+gains = so.net_realized_gain + so.net_change_unrealized
+na_dec, na_mar = 587822907.84, 662894158.16          # N-PORT net assets, Dec 31 2025 and Mar 31 2026
+q1, q2 = att.loc["Q1 2026", "holdings"], att.loc["Q2 2026", "holdings"]
+navs = pd.read_csv(os.path.join(DATA, "bui_price_nav_daily.csv"), parse_dates=["date"]).set_index("date").bui_nav
+r_lead = navs.loc["2026-04-02"] / navs.loc["2026-03-31"] - 1
+r_new = (1 + q2) / (1 + r_lead) - 1
+bh = na_dec * q1 + na_mar * q2 + so.rights_offering_proceeds * r_new
+dist_bound = so.distributions_total / 2 * h1
+gap_usd = gains - bh
+p("1b. in dollars: filed realised + unrealised $%.1fm; buy-and-hold $%.1fm (Q1 $%.1fm, Q2 $%.1fm, rights money $%.1fm"
+  " at %.2f%%); gap $%.1fm, %.1f%% of average net assets, or $%.1fm after the most the payouts could account for" %
+  (gains / 1e6, bh / 1e6, na_dec * q1 / 1e6, na_mar * q2 / 1e6, so.rights_offering_proceeds * r_new / 1e6, r_new * 100,
+   gap_usd / 1e6, gap_usd / ((591048563 + 741864850) / 2) * 100, (gap_usd - dist_bound) / 1e6))
+sh_dec, sh_jun = na_dec / fh.nav_begin, 26548823                  # Dec 31 from net assets / NAV; Jun 30 from the N-CSRS
+sh_avg = (sh_dec * 3 + sh_jun * 3) / 6                               # new shares arrived on April 2, half-way through
+p("   per share that's about $%.2f on %.1fm average shares, against the $%.2f from the financial highlights, so the"
+  " balancing-figure problem doesn't make the gap go away" % (gap_usd / sh_avg, sh_avg / 1e6, fh.realized_unrealized - implied))
+
 # 2. cheap candidates (N-CSRS statement of operations, six months to June 30, 2026; BUI column)
 st = {"securities lending income, net": 1406, "foreign withholding tax claims": 328712,
       "IRS fee on those claims": -87340, "total investment income": 9374768}
@@ -108,7 +134,7 @@ q = g.groupby(pd.PeriodIndex(g.index, freq="Q")).sum() * 100
 p("   by quarter: " + ", ".join("%s %+.1f" % (k, v) for k, v in q.items()))
 p("\nreading: the half to June 30 has about 2 points of gains that a buy-and-hold book can't produce, a quarter of the"
   " book turned over, securities lending and tax reclaims are each under 0.05%, the rights offering cut NAV, and"
-  " there's no sign of late foreign marks. The best explanation left is trading inside the quarter. Currency can't be"
+  " there's no sign of late foreign marks. What's left is consistent with gains from trading inside the quarter; the filings can't prove it was skill rather than timing. Currency can't be"
   " separated from stock moves for the unpriced foreign names until September's N-PORT is out.")
 d.to_csv(os.path.join(RES, "nav_gap_daily.csv"))
 open(os.path.join(RES, "nav_gap.txt"), "w").write("\n".join(out) + "\n")
