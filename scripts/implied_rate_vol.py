@@ -54,7 +54,7 @@ p("historical s.d. of 12-month 10-year changes used before: 0.92 pts; implied is
   (abs(sig_y / 0.92 - 1) * 100, "higher" if sig_y > 0.92 else "lower"))
 
 # rerun the scenario target with implied vol, same inputs as duration_and_valuation.py
-y10, fwd, nav0, pay, price0, Dc = 5.15, 5.24, 26.38, 1.848, 26.21, 8.0
+y10, fwd, nav0, pay, price0, Dc = 5.07, 5.16, 25.86, 1.848, 25.77, 8.0  # Nov 18 close (Treasury par curve, Nasdaq XBUIX and BUI)
 flat = 2.76 + 7.0 - 1.06
 tgt = 0
 for name, sh, w, prem in [("bull", -1.41, 0.25, 1.0), ("base", 0, 0.5, -0.26), ("bear", 1.41, 0.25, -5.0)]:
@@ -64,7 +64,7 @@ for name, sh, w, prem in [("bull", -1.41, 0.25, 1.0), ("base", 0, 0.5, -0.26), (
     p1 = nav1 * (1 + prem / 100)
     tgt += w * p1
     p("  %-4s 10-year %.2f%%, NAV total return %+.1f%%, price $%.2f" % (name, ye, tr * 100, p1))
-p("weighted target with implied vol $%.2f (vs $26.38 with historical vol)" % tgt)
+p("weighted target with implied vol $%.2f (vs $25.83 with historical vol)" % tgt)
 p("the weighted target barely moves because the scenarios are symmetric and the model is linear in rates;"
-  " what changes is the width: the bear case price moves from $22.69 to the figure above")
+  " what changes is the width: the bear case price moves from $22.22 to the figure above")
 open(os.path.join(RES, "implied_rate_vol.txt"), "w").write("\n".join(out) + "\n")

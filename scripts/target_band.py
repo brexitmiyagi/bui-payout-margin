@@ -20,8 +20,8 @@ rng = np.random.default_rng(3)
 N = 200_000
 # Nov 17 close: NAV $25.87, price $25.99 (BlackRock). Treasury par curve Nov 17: 1-year 4.60, 10-year 5.10, 20-year
 # 5.50, so the 1-year-forward 10-year is about 5.19 (11-year interpolated). Implied vol still the Nov 13 Cboe read.
-nav0, pay, price0, t1 = 25.87, 1.848, 25.99, 4.60
-yf = ((1 + (5.10 + 0.04) / 100) ** 11 / (1 + t1 / 100)) ** 0.1 * 100 - 100
+nav0, pay, price0, t1 = 25.86, 1.848, 25.77, 4.62
+yf = ((1 + (5.07 + 0.04) / 100) ** 11 / (1 + t1 / 100)) ** 0.1 * 100 - 100
 dy = rng.normal(yf - 5.10, 1.06, N)
 D = rng.uniform(6, 10.5, N)
 g = rng.triangular(5, 7, 9.42, N)

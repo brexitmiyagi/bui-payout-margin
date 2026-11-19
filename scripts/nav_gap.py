@@ -136,5 +136,7 @@ p("\nreading: the half to June 30 has about 2 points of gains that a buy-and-hol
   " book turned over, securities lending and tax reclaims are each under 0.05%, the rights offering cut NAV, and"
   " there's no sign of late foreign marks. What's left is consistent with gains from trading inside the quarter; the filings can't prove it was skill rather than timing. Currency can't be"
   " separated from stock moves for the unpriced foreign names until September's N-PORT is out.")
+d["fixed_resid"] = g
+d["fixed_resid_cum_pts"] = g.cumsum() * 100
 d.to_csv(os.path.join(RES, "nav_gap_daily.csv"))
 open(os.path.join(RES, "nav_gap.txt"), "w").write("\n".join(out) + "\n")

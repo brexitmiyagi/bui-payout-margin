@@ -3,14 +3,14 @@
 # removes, and a 12-month target built from 10-year scenarios:
 #   NAV total return = rates-flat return + duration x (-change in 10-year yield)
 #   rates-flat return = portfolio dividend yield + EPS growth - expenses (all stated below with sources)
-#   10-year scenarios = 12-month forward from the Nov 13 Treasury par curve, +/- 1.41 standard deviations of BUI-era
+#   10-year scenarios = 12-month forward from the Nov 18 Treasury par curve, +/- 1.41 standard deviations of BUI-era
 #   12-month yield changes, weighted 25/50/25 (this keeps the variance of the historical changes)
 import csv, os, datetime as dt, math, statistics as st
 from common import daily, dists, nav_tr_index
 HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, '..', 'data')
 D = daily(); idx = nav_tr_index(D, dists())
 y = {dt.date.fromisoformat(r['observation_date']): float(r['DGS10']) for r in csv.DictReader(open(os.path.join(DATA, 'dgs10.csv'))) if r['DGS10'] not in ('', '.')}
-curve = {r['Date']: r for r in csv.DictReader(open(os.path.join(DATA, 'treasury_par_curve_2026.csv')))}['11/13/2026']
+curve = {r['Date']: r for r in csv.DictReader(open(os.path.join(DATA, 'treasury_par_curve_2026.csv')))}['11/18/2026']
 y1, y10, y20 = float(curve['1 Yr']), float(curve['10 Yr']), float(curve['20 Yr'])
 # 10-year par note modified duration at today's yield (semiannual coupons)
 yy = y10/100; c = yy/2*100; cf = [c]*20; cf[-1] += 100
