@@ -1,6 +1,6 @@
-2016-11-14 to 2026-11-13: mean +0.87%, median +0.56%, at a premium 58% of days
+2016-11-14 to 2026-11-18: mean +0.87%, median +0.56%, at a premium 58% of days
   since 2021: mean +0.25%, median +0.22%
   since 2023: mean -0.21%, median -0.26%
-  since 2025: mean +1.61%, median +1.01%
-  since 2026: mean +1.20%, median +0.63%
-2026 high +10.28% on 2026-03-05; latest -0.64% on 2026-11-13
+  since 2025: mean +1.60%, median +0.99%
+  since 2026: mean +1.18%, median +0.61%
+2026 high +10.28% on 2026-03-05; latest -0.35% on 2026-11-18

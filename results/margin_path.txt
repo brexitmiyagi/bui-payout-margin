@@ -1,13 +1,13 @@
 2026-09-30: 5-year 8.00% vs payout 7.45% of NAV $24.79, margin +0.55 pts
 2026-10-30: 5-year 8.07% vs payout 7.01% of NAV $26.38, margin +1.06 pts
-2026-11-13: 5-year 8.28% vs payout 7.01% of NAV $26.38, margin +1.27 pts
+2026-11-18: 5-year 7.77% vs payout 7.15% of NAV $25.86, margin +0.62 pts
 NAV total return from now to 31 Mar 2027 -> 5-year, payout rate, margin
-  -10%: 6.16% vs 8.02%, margin -1.86 pts
-  -6%: 7.09% vs 7.67%, margin -0.58 pts
-  -5%: 7.32% vs 7.58%, margin -0.27 pts
-  -4%: 7.54% vs 7.50%, margin +0.04 pts
-  -3%: 7.76% vs 7.42%, margin +0.34 pts
-  +0%: 8.42% vs 7.19%, margin +1.23 pts
-  +3%: 9.07% vs 6.98%, margin +2.09 pts
-  +5%: 9.49% vs 6.84%, margin +2.64 pts
-  +10%: 10.51% vs 6.52%, margin +3.98 pts
+  -10%: 5.74% vs 8.18%, margin -2.44 pts
+  -6%: 6.66% vs 7.83%, margin -1.16 pts
+  -5%: 6.89% vs 7.74%, margin -0.85 pts
+  -4%: 7.11% vs 7.66%, margin -0.54 pts
+  -3%: 7.34% vs 7.58%, margin -0.24 pts
+  +0%: 7.99% vs 7.34%, margin +0.65 pts
+  +3%: 8.63% vs 7.12%, margin +1.51 pts
+  +5%: 9.05% vs 6.98%, margin +2.07 pts
+  +10%: 10.07% vs 6.66%, margin +3.41 pts

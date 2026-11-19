@@ -7,9 +7,9 @@
 2023: 51 weeks, NAV move per +100bp in the 10-year -6.6%, correlation -0.50
 2024: 51 weeks, NAV move per +100bp in the 10-year -3.8%, correlation -0.34
 2025: 50 weeks, NAV move per +100bp in the 10-year +3.6%, correlation +0.21
-2026: 42 weeks, NAV move per +100bp in the 10-year -8.6%, correlation -0.45
-since 30 Jun 2026: 18 weeks, -6.5% per +100bp, correlation -0.43
+2026: 43 weeks, NAV move per +100bp in the 10-year -6.2%, correlation -0.35
+since 30 Jun 2026: 19 weeks, -2.2% per +100bp, correlation -0.16
 10-year yield 2026-06-30: 4.44%
 10-year yield 2026-09-30: 5.29%
 10-year yield 2026-10-30: 4.94%
-10-year yield 2026-11-12: 5.10%
+10-year yield 2026-11-18: 5.07%

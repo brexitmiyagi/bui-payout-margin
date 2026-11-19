@@ -1,4 +1,4 @@
-12-month price, BUI: 10th 21.01, 25th 23.38, median 26.02, 75th 28.69, 90th 31.11; mean 26.05
-1-year-forward 10-year 5.19%
-probability price + distributions beats today's $25.99: 68%; beats 1-year Treasury (4.60%): 57%
-without the non-rate noise (rates, duration, growth, premium only): 10th 23.00, median 26.03, 90th 29.14
+12-month price, BUI: 10th 21.08, 25th 23.44, median 26.08, 75th 28.75, 90th 31.17; mean 26.11
+1-year-forward 10-year 5.16%
+probability price + distributions beats today's $25.77: 71%; beats 1-year Treasury (4.62%): 60%
+without the non-rate noise (rates, duration, growth, premium only): 10th 23.07, median 26.09, 90th 29.20

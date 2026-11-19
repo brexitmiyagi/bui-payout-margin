@@ -1,8 +1,8 @@
 fund | discount now | median discount since 2016 / since 2023 | dist rate on NAV / price | 5-yr gap Sep 30 2026 / Oct 30 2026 / 1 yr earlier | 2026 rate beta (t) | 2026 equal-weight equity beta (t)
-BUI | -0.64% | +0.56% / -0.26% | 7.01% / 7.05% | +0.55 / +1.06 / +4.27 | -10.5% (-3.5) | +0.16 (+1.1)
-UTF | -6.68% | -2.20% / -1.23% | 7.19% / 7.71% | -0.64 / +0.62 / +3.15 | -10.1% (-3.1) | +0.23 (+1.5)
-DPG | -12.54% | -9.99% / -10.70% | 5.61% / 6.42% | +5.09 / +5.97 / +7.33 | -13.3% (-3.0) | +0.18 (+0.8)
-GLU | -3.52% | -5.20% / -3.49% | 6.78% / 7.03% | -1.03 / -0.79 / +2.85 | -9.6% (-4.6) | +0.59 (+5.7)
+BUI | -0.35% | +0.56% / -0.26% | 7.15% / 7.17% | +0.55 / +1.06 / +4.27 | -6.2% (-1.7) | +0.31 (+1.7)
+UTF | -6.68% | -2.20% / -1.23% | 7.19% / 7.71% | -0.64 / +0.62 / +3.15 | -5.9% (-1.5) | +0.39 (+2.0)
+DPG | -12.54% | -9.99% / -10.70% | 5.61% / 6.42% | +5.09 / +5.97 / +7.33 | -7.0% (-1.3) | +0.42 (+1.5)
+GLU | -3.52% | -5.20% / -3.49% | 6.78% / 7.03% | -1.03 / -0.79 / +2.85 | -6.7% (-2.6) | +0.70 (+6.0)
 
 BUI: leverage 0% (none), expenses 1.06% ex-leverage / 1.06% total, income covered 25% of distributions (H1 2026 per share NII 0.23 annualised vs 1.848 regular), utilities 56% of investments, payout history: never cut; raised 2024 and Jun 2026
 UTF: leverage 28% (57% variable at 4.4%, 43% fixed at 3.1% for 1.7 years), expenses 1.33% ex-leverage / 3.03% total, income covered 41% of distributions (H1 2026 per share NII 0.39 vs distributions 0.96), utilities 38% of investments, payout history: $0.155 monthly 2018-Mar 2026, $0.165 from Apr 2026

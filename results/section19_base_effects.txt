@@ -1,10 +1,10 @@
 month-end: 2026-11  2026-12  2027-01  2027-02  2027-03  2027-04  2027-05  2027-06  2027-07  2027-08  2027-09  2027-10  2027-11  2027-12
-NAV 0.00%/yr: +1.67    +0.71    +1.80    +1.94    +1.08    +2.37    +1.84    +3.64    +2.05    +2.39    +4.71    +3.45    +1.44    +1.92
-NAV 5.00%/yr: +1.79    +0.94    +2.16    +2.42    +1.67    +3.08    +2.68    +4.61    +3.13    +3.60    +6.06    +4.91    +3.01    +3.62
-NAV 8.28%/yr: +1.86    +1.09    +2.38    +2.72    +2.04    +3.53    +3.20    +5.21    +3.81    +4.35    +6.91    +5.83    +3.99    +4.68
+NAV 0.00%/yr: +1.53    +0.56    +1.66    +1.80    +0.93    +2.22    +1.69    +3.48    +1.89    +2.23    +4.55    +3.29    +1.28    +1.75
+NAV 5.00%/yr: +1.65    +0.80    +2.01    +2.27    +1.52    +2.94    +2.53    +4.46    +2.98    +3.44    +5.91    +4.76    +2.85    +3.46
+NAV 8.28%/yr: +1.72    +0.94    +2.23    +2.57    +1.90    +3.39    +3.05    +5.07    +3.66    +4.20    +6.76    +5.68    +3.84    +4.53
 months leaving the 5-year window, monthly NAV total return:
   2021-11 -3.0%, 2021-12 +4.4%, 2022-01 -5.1%, 2022-02 -0.8%, 2022-03 +3.8%, 2022-04 -5.9%, 2022-05 +2.2%, 2022-06 -8.0%, 2022-07 +7.3%, 2022-08 -1.8%, 2022-09 -10.1%, 2022-10 +5.6%, 2022-11 +9.3%, 2022-12 -2.4%
-Dec 31, 2026 margin goes negative below a NAV total return of -2.99% from Nov 13 (special of $0.00)
-Dec 31, 2026 margin goes negative below a NAV total return of -2.51% from Nov 13 (special of $0.50)
-share of 32-trading-day windows since 2016 with NAV total return below -3.0%: 13.8%; in 2022, 2023 and 2026: 29.1%
-share of 32-trading-day windows since 2016 with NAV total return below -2.5%: 16.1%; in 2022, 2023 and 2026: 33.0%
+Dec 31, 2026 margin goes negative below a NAV total return of -1.04% from Nov 13 (special of $0.00)
+Dec 31, 2026 margin goes negative below a NAV total return of -0.55% from Nov 13 (special of $0.50)
+share of 32-trading-day windows since 2016 with NAV total return below -3.0%: 13.8%; in 2022, 2023 and 2026: 28.9%
+share of 32-trading-day windows since 2016 with NAV total return below -2.5%: 16.1%; in 2022, 2023 and 2026: 32.9%

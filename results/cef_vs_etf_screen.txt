@@ -1,42 +1,42 @@
-108 equity CEFs, discounts at the latest close in CEF Connect's history (mostly November 17, 2026), tax-deferred account
-  pass on both tests (discount above its 5-year breakeven, and a positive edge if the discount never closes): 30
-  fail both: 35
-  median breakeven discount 5.6%, median actual discount 10.7%
+108 equity CEFs, discounts at the November 18, 2026 close (Nasdaq prices and NAVs; 25 funds with no Nov 18 NAV posted yet use CEF Connect's Nov 17 history), tax-deferred account
+  pass on both tests (discount above its 5-year breakeven, and a positive edge if the discount never closes): 32
+  fail both: 31
+  median breakeven discount 5.6%, median actual discount 11.1%
 
 top 15 by edge if the discount never closes:
-ticker category_meaning                           matching_etf  expense_ratio_pct  etf_expense_pct  discount_pct  dist_rate_nav_pct  breakeven_discount_5y  discount_minus_breakeven  edge_if_discount_stays  leverage_pct
-   CET        US equity                                    IVV               0.46             0.03        -16.54               9.05                   1.98                     14.56                    1.36          0.32
-   MCN     covered call                                   JEPI               1.10             0.35        -14.36              11.43                   3.44                     10.92                    1.17          0.01
-   IFN      Asia equity                                   AAXJ               1.36             0.72        -12.73              11.32                   2.95                      9.78                    1.01          0.28
-   NML             MLPs                                   AMLP               1.07             1.01        -12.20               7.38                   0.28                     11.92                    0.97         25.21
-   PEO    sector equity       a Select Sector SPDR such as XLU               0.62             0.08        -10.85              10.48                   2.48                      8.37                    0.74          0.70
-   TWN      Asia equity                                   AAXJ               1.20             0.72        -15.61               6.26                   2.22                     13.39                    0.68           NaN
-   ETJ     covered call                                   JEPI               1.12             0.35        -13.15               8.77                   3.53                      9.62                    0.56           NaN
-   TDF      Asia equity                                   AAXJ               1.21             0.72        -16.14               5.42                   2.26                     13.88                    0.55          0.75
-   USA        US equity                                    IVV               0.91             0.03        -11.92              10.24                   4.01                      7.91                    0.51          0.85
-   ETY     covered call                                   JEPI               1.06             0.35        -12.31               8.50                   3.25                      9.06                    0.48           NaN
-   EOS     covered call                                   JEPI               1.09             0.35        -12.28               8.52                   3.39                      8.89                    0.45           NaN
-   ETW     covered call                                   JEPI               1.10             0.35        -12.28               8.52                   3.44                      8.84                    0.44           NaN
-   SWZ   single country EWJ (as a typical iShares country ETF)               2.21             0.49        -21.59               7.82                   7.75                     13.84                    0.43          0.00
-   IIF      Asia equity                                   AAXJ               1.35             0.72        -12.08               7.45                   2.90                      9.18                    0.39           NaN
-   NFJ     covered call                                   JEPI               0.96             0.35        -11.48               7.67                   2.80                      8.68                    0.38           NaN
+ticker category_meaning                     matching_etf  expense_ratio_pct  etf_expense_pct  discount_pct  dist_rate_nav_pct  breakeven_discount_5y  discount_minus_breakeven  edge_if_discount_stays  leverage_pct
+   CET        US equity                              IVV               0.46             0.03        -16.54               9.05                   1.98                     14.56                    1.36          0.32
+   MCN     covered call                             JEPI               1.10             0.35        -14.43              11.43                   3.44                     10.99                    1.18          0.01
+   NML             MLPs                             AMLP               1.07             1.01        -12.67               7.38                   0.28                     12.39                    1.01         25.21
+   IFN      Asia equity                             AAXJ               1.36             0.72        -12.38              11.32                   2.95                      9.43                    0.96          0.28
+   TWN      Asia equity                             AAXJ               1.20             0.72        -15.61               6.26                   2.22                     13.39                    0.68           NaN
+   PEO    sector equity a Select Sector SPDR such as XLU               0.62             0.08        -10.33              10.48                   2.48                      7.85                    0.67          0.70
+   CLM        US equity                              IVV               1.10             0.03         -6.45              24.92                   4.86                      1.59                    0.65          0.00
+   CRF        US equity                              IVV               1.13             0.03         -6.48              24.85                   4.99                      1.49                    0.62          9.50
+   TDF      Asia equity                             AAXJ               1.21             0.72        -16.35               5.42                   2.26                     14.09                    0.57          0.75
+   USA        US equity                              IVV               0.91             0.03        -12.29              10.24                   4.01                      8.28                    0.55          0.85
+   ETY     covered call                             JEPI               1.06             0.35        -12.58               8.50                   3.25                      9.33                    0.51           NaN
+   ETJ     covered call                             JEPI               1.12             0.35        -12.69               8.77                   3.53                      9.16                    0.50           NaN
+   EOS     covered call                             JEPI               1.09             0.35        -12.62               8.52                   3.39                      9.23                    0.49           NaN
+   SPE        US equity                              IVV               1.86             0.03        -20.54               8.96                   8.19                     12.35                    0.49         25.83
+   NFJ     covered call                             JEPI               0.96             0.35        -12.10               7.67                   2.80                      9.30                    0.45           NaN
 
 BUI and its peers:
 ticker category_meaning                     matching_etf  expense_ratio_pct  etf_expense_pct  discount_pct  dist_rate_nav_pct  breakeven_discount_5y  discount_minus_breakeven  edge_if_discount_stays  leverage_pct
-   GLU    sector equity a Select Sector SPDR such as XLU               1.35             0.08         -7.03               6.76                   5.75                      1.28                   -0.76         17.54
-   BUI    sector equity a Select Sector SPDR such as XLU               1.09             0.08          0.46               6.99                   4.59                     -5.05                   -1.01          1.28
-   DNP    sector equity a Select Sector SPDR such as XLU               2.53             0.08          3.97               8.04                  10.85                    -14.82                   -2.45         23.12
-   UTF    sector equity a Select Sector SPDR such as XLU               3.43             0.08         -7.17               7.21                  14.59                     -7.42                   -2.79         28.22
+   GLU    sector equity a Select Sector SPDR such as XLU               1.35             0.08         -6.86               6.76                   5.75                      1.11                   -0.77         17.54
+   BUI    sector equity a Select Sector SPDR such as XLU               1.09             0.08         -0.35               6.99                   4.59                     -4.24                   -0.99          1.28
+   DNP    sector equity a Select Sector SPDR such as XLU               2.53             0.08          4.39               8.04                  10.85                    -15.24                   -2.45         23.12
+   UTF    sector equity a Select Sector SPDR such as XLU               3.43             0.08         -7.44               7.21                  14.59                     -7.15                   -2.77         28.22
 
 bottom 10:
 ticker category_meaning                     matching_etf  expense_ratio_pct  etf_expense_pct  discount_pct  dist_rate_nav_pct  breakeven_discount_5y  discount_minus_breakeven  edge_if_discount_stays  leverage_pct
+   DPG    sector equity a Select Sector SPDR such as XLU               3.34             0.08        -12.81               5.64                  14.22                     -1.41                   -2.43         21.75
    GRX    sector equity a Select Sector SPDR such as XLU               3.17             0.08        -10.00               5.90                  13.52                     -3.52                   -2.43         29.42
-   DNP    sector equity a Select Sector SPDR such as XLU               2.53             0.08          3.97               8.04                  10.85                    -14.82                   -2.45         23.12
-   DPG    sector equity a Select Sector SPDR such as XLU               3.34             0.08        -11.64               5.64                  14.22                     -2.58                   -2.52         21.75
+   DNP    sector equity a Select Sector SPDR such as XLU               2.53             0.08          4.39               8.04                  10.85                    -15.24                   -2.45         23.12
   MEGI    sector equity a Select Sector SPDR such as XLU               3.73             0.08        -10.84               9.21                  15.80                     -4.96                   -2.53         21.30
-   PGZ      real estate                             USRT               4.79             0.08        -15.08              12.13                  20.00                     -4.92                   -2.56         31.73
+   PGZ      real estate                             USRT               4.79             0.08        -14.93              12.13                  20.00                     -5.07                   -2.58         31.73
+   UTF    sector equity a Select Sector SPDR such as XLU               3.43             0.08         -7.44               7.21                  14.59                     -7.15                   -2.77         28.22
   FXBY        US equity                              IVV               2.98             0.03        -32.37               0.35                  12.93                     19.44                   -2.78         12.55
-   UTF    sector equity a Select Sector SPDR such as XLU               3.43             0.08         -7.17               7.21                  14.59                     -7.42                   -2.79         28.22
   RLTY      real estate                             USRT               4.55             0.08        -12.16               7.93                  19.06                     -6.90                   -3.37         33.64
-   NXG    sector equity a Select Sector SPDR such as XLU               4.16             0.08         -3.18              15.28                  17.53                    -14.35                   -3.58         37.67
+   NXG    sector equity a Select Sector SPDR such as XLU               4.16             0.08         -2.51              15.28                  17.53                    -15.02                   -3.69         37.67
   BANX    sector equity a Select Sector SPDR such as XLU               6.43             0.08         -4.75               8.70                  26.16                    -21.41                   -5.92         16.92

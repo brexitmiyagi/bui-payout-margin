@@ -1,7 +1,7 @@
 series,freq,beta,se,n
-BUI NAV,D,-5.99,1.05,216
-BUI NAV,W-FRI,-6.37,2.56,45
-XLU price,D,-8.06,1.39,216
-XLU price,W-FRI,-9.43,3.48,45
-SPY price,D,-4.87,1.26,216
-SPY price,W-FRI,-1.07,2.72,45
+BUI NAV,D,-5.78,1.05,220
+BUI NAV,W-FRI,-5.12,2.54,46
+XLU price,D,-7.87,1.39,220
+XLU price,W-FRI,-8.02,3.4,46
+SPY price,D,-4.64,1.26,220
+SPY price,W-FRI,-0.19,2.68,46

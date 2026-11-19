@@ -1,0 +1,10 @@
+        close    nav  prem_pct  yield_on_price_pct
+ticker                                            
+BUI     25.77  25.86     -0.35                7.17
+UTF     25.00  27.01     -7.44                7.92
+DNP      9.99   9.57      4.39                7.81
+GLU     17.69  18.99     -6.86                7.46
+
+BUI target (100% of NAV) $25.86, trim above +1% $26.12, accumulate below 95% $24.57, formal Buy below 87% $22.50
+payout $0.154 a month = 7.15% of NAV
+UTF-BUI spread Nov 18 -7.09, trailing one-year median -5.33, switch trigger -10.33

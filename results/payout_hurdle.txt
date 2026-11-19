@@ -1,18 +1,18 @@
-latest: 2026-11-13 price $26.21, NAV $26.38, premium -0.64%
-regular distribution $0.154 a month = $1.848 a year = 7.01% of NAV, 7.05% of price
-rolling 12-month NAV total return since 2016-11-14: 2262 windows, median 9.95%, 10th pct -2.55%, 25th 2.55%, 75th 17.36%, 90th 26.02%
-share of 12-month windows that earned at least the 7.01% payout: 61%
+latest: 2026-11-18 price $25.77, NAV $25.86, premium -0.35%
+regular distribution $0.154 a month = $1.848 a year = 7.15% of NAV, 7.17% of price
+rolling 12-month NAV total return since 2016-11-14: 2265 windows, median 9.96%, 10th pct -2.55%, 25th 2.55%, 75th 17.36%, 90th 26.02%
+share of 12-month windows that earned at least the 7.15% payout: 61%
 share of 12-month windows with a negative NAV total return: 17.1%
   below -10.00%: 1.9%
   -10.00% to -5.00%: 3.7%
   -5.00% to 0.00%: 11.5%
   0.00% to 5.00%: 14.6%
-  5.00% to 7.01%: 7.1%
-  7.01% to 10.00%: 11.4%
-  10.00% to 15.00%: 15.2%
+  5.00% to 7.15%: 7.6%
+  7.15% to 10.00%: 10.9%
+  10.00% to 15.00%: 15.3%
   15.00% to 20.00%: 15.9%
   20.00% to 25.00%: 7.3%
   25.00% to 30.00%: 4.7%
   30.00% and up: 6.7%
-NAV total return 2016-11-14 to 2026-11-13: 11.33% a year
-last 5 years: 8.28% a year from 2021-11-12
+NAV total return 2016-11-14 to 2026-11-18: 11.09% a year
+last 5 years: 7.77% a year from 2021-11-18

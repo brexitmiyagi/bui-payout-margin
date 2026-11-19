@@ -1,7 +1,7 @@
 vehicle cost_ex_leverage              cost_with_leverage yield_on_price premium_discount rate_beta_2026  edge_vs_book_like_mix_5y median_daily_dollar_volume
-    BUI            1.06%             1.06% (no leverage)          7.05%           -0.64% -10.5 (t -3.5) -1.6% (90%: -5.0 to +1.6)                      $1.9m
-    UTF            1.33%                           3.03%          7.71%           -6.68%  -9.8 (t -3.2) -1.6% (90%: -5.4 to +1.9)                      $6.9m
-    DNP            0.95%                           2.53%          7.71%           +3.69% -14.6 (t -3.2) -0.1% (90%: -4.5 to +3.8)                      $7.0m
-    GLU            1.13% n/a (preferred, not an expense)          7.03%           -3.52%  -9.1 (t -4.5) -3.4% (90%: -8.5 to +1.9)                      $0.1m
-    XLU            0.08%                           0.08%          2.77%        n/a (ETF) -15.3 (t -3.2)                 benchmark                    $986.5m
-    IGF            0.37%                           0.37%          2.93%        n/a (ETF)  -8.9 (t -3.8)                 benchmark                     $46.2m
+    BUI            1.06%             1.06% (no leverage)          7.05%           -0.64%  -6.2 (t -1.7) -1.6% (90%: -5.0 to +1.6)                      $1.9m
+    UTF            1.33%                           3.03%          7.71%           -6.68%  -6.1 (t -1.7) -1.6% (90%: -5.4 to +1.9)                      $6.9m
+    DNP            0.95%                           2.53%          7.71%           +3.69%  -8.5 (t -1.5) -0.1% (90%: -4.5 to +3.8)                      $7.0m
+    GLU            1.13% n/a (preferred, not an expense)          7.03%           -3.52%  -6.8 (t -3.2) -3.4% (90%: -8.5 to +1.9)                      $0.1m
+    XLU            0.08%                           0.08%          2.77%        n/a (ETF)  -9.2 (t -1.7)                 benchmark                    $986.5m
+    IGF            0.37%                           0.37%          2.93%        n/a (ETF)  -4.3 (t -1.2)                 benchmark                     $46.2m

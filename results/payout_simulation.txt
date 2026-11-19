@@ -1,4 +1,4 @@
 all months: 119 months
-  P(Section 19 margin negative at some month-end by Dec 2027): 36%
+  P(Section 19 margin negative at some month-end by Dec 2027): 37%
   P(rough unrealised-gain reservoir runs out by Dec 2027): 0%
-  NAV after 3 years: 10th pct $22.71, median $29.03, 90th $37.62; P(below $26.38 today) 31%
+  NAV after 3 years: 10th pct $22.15, median $28.33, 90th $36.74; P(below $25.86 today) 32%
