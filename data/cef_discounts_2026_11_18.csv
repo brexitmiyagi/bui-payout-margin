@@ -1,0 +1,109 @@
+ticker,latest_date,latest_price,latest_nav,latest_discount,source
+IFN,2026-11-18,11.39,13.0,-12.38,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+JOF,2026-11-17,10.52,12.03,-12.55,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+KF,2026-11-17,48.8,55.84,-12.61,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+IIF,2026-11-18,23.5,26.74,-12.12,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+CAF,2026-11-18,15.9,18.98,-16.23,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+TWN,2026-11-17,74.85,88.7,-15.61,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+TDF,2026-11-18,8.85,10.58,-16.35,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+MCN,2026-11-18,5.22,6.1,-14.43,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+QQQX,2026-11-17,27.89,29.16,-4.36,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+SPXX,2026-11-17,17.64,19.74,-10.64,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+GNT,2026-11-18,7.58,7.9,-4.05,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BDJ,2026-11-18,9.38,10.21,-8.13,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BGY,2026-11-18,5.18,5.83,-11.15,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BOE,2026-11-18,10.69,12.2,-12.38,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+CII,2026-11-18,22.55,22.73,-0.79,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+STK,2026-11-18,46.65,48.83,-4.46,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+EOI,2026-11-18,18.11,19.89,-8.95,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+EOS,2026-11-18,19.32,22.11,-12.62,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ETY,2026-11-18,13.0,14.87,-12.58,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ETB,2026-11-18,14.39,16.26,-11.5,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ETV,2026-11-18,13.69,15.28,-10.41,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ETW,2026-11-18,8.99,10.14,-11.34,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+EXG,2026-11-18,9.06,10.09,-10.21,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ETJ,2026-11-18,7.57,8.67,-12.69,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+FFA,2026-11-18,21.2,24.1,-12.03,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+IGA,2026-11-18,9.97,10.91,-8.62,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+IGD,2026-11-18,6.24,6.43,-2.95,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+NFJ,2026-11-18,13.58,15.45,-12.1,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+AEF,2026-11-18,7.42,8.41,-11.77,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+CEE,2026-11-18,18.4,20.86,-11.79,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+MXE,2026-11-18,12.74,15.85,-19.62,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+MXF,2026-11-17,21.19,23.89,-11.3,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+EMF,2026-11-18,18.94,21.55,-12.11,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+LGI,2026-11-18,15.88,17.78,-10.69,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+RGT,2026-11-18,14.735,17.66,-16.56,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GLQ,2026-11-18,7.1,8.11,-12.45,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+CPZ,2026-11-18,12.48,14.63,-14.7,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+AGD,2026-11-18,10.79,11.3,-4.51,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+AOD,2026-11-18,9.73,9.83,-1.02,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+EEA,2026-11-18,10.06,12.02,-16.31,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ETG,2026-11-18,21.84,24.65,-11.4,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+HEQ,2026-11-18,11.13,12.36,-9.95,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GGZ,2026-11-18,15.09,16.99,-11.18,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+IDE,2026-11-18,11.39,12.24,-6.94,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+EOD,2026-11-18,5.95,6.63,-10.26,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+TYG,2026-11-18,35.85,40.59,-11.68,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+KYN,2026-11-18,13.32,15.62,-14.72,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+NML,2026-11-18,9.58,10.97,-12.67,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+EMO,2026-11-18,48.42,55.15,-12.2,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+SRV,2026-11-18,33.19,36.38,-8.77,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+RLTY,2026-11-17,14.37,16.36,-12.16,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+RQI,2026-11-18,11.45,12.79,-10.48,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+RFI,2026-11-18,10.45,11.44,-8.65,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+RNP,2026-11-18,18.55,20.89,-11.2,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+AWP,2026-11-18,10.43,10.82,-3.6,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+IGR,2026-11-18,10.82,12.44,-13.02,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+JRS,2026-11-18,7.44,8.53,-12.78,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+PGZ,2026-11-18,8.72,10.25,-14.93,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+NRO,2026-11-18,2.54,2.92,-13.01,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+PEO,2026-11-18,27.43,30.59,-10.33,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+UTF,2026-11-18,25.0,27.01,-7.44,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+MEGI,2026-11-17,14.23,15.96,-10.84,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+UTG,2026-11-18,31.7,33.45,-5.23,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+THQ,2026-11-18,18.08,19.5,-7.28,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+HQH,2026-11-18,20.58,20.75,-0.82,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+HQL,2026-11-18,17.49,17.63,-0.79,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+THW,2026-11-18,12.26,13.13,-6.63,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+AIO,2026-11-18,22.66,23.84,-4.95,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ASA,2026-11-17,47.69,59.91,-20.4,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+GGN,2026-11-18,4.7,5.29,-11.15,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GGT,2026-11-18,3.58,3.39,5.6,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GLU,2026-11-18,17.6874,18.99,-6.86,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GRX,2026-11-17,10.26,11.4,-10,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+BTO,2026-11-18,36.52,40.28,-9.33,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+NXG,2026-11-18,43.49,44.61,-2.51,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+DNP,2026-11-18,9.99,9.57,4.39,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+DPG,2026-11-18,13.61,15.61,-12.81,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BUI,2026-11-18,25.77,25.86,-0.35,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BST,2026-11-18,43.49,44.27,-1.76,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BMEZ,2026-11-17,16.64,18.52,-10.15,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+BSTZ,2026-11-17,23.86,25.77,-7.41,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+BCX,2026-11-17,11.21,12.55,-10.68,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+BGR,2026-11-18,16.28,18.31,-11.09,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BME,2026-11-18,45.37,46.96,-3.39,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+BANX,2026-09-30,19.86,20.83,-4.75,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+IAF,2026-11-18,11.45,13.19,-13.19,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GF,2026-11-17,10.03,11.03,-9.07,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+SWZ,2026-11-18,5.82,7.33,-20.6,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+FUND,2026-11-17,9.63,10.59,-9.07,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+GAM,2026-11-18,55.95,63.62,-12.06,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+RVT,2026-11-18,16.4,18.95,-13.46,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+RMT,2026-11-17,12.57,14.05,-10.53,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+JCE,2026-11-18,16.28,17.12,-4.91,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ADX,2026-11-17,24.37,25.04,-2.68,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+STEW,2026-11-17,18.5,24.39,-24.15,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+CLM,2026-11-18,5.51,5.89,-6.45,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+CRF,2026-11-18,5.34,5.71,-6.48,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+CET,2026-11-13,56.45,67.64,-16.54,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+GAB,2026-11-18,5.19,5.6,-7.32,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+FXBY,2026-11-17,24.26,35.87,-32.37,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+BTX,2026-11-17,7.38,7.98,-7.52,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+NBXG,2026-11-17,13.6,15.16,-10.29,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+GDV,2026-11-18,28.03,32.17,-12.87,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+ASG,2026-11-18,4.62,5.36,-13.81,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+GRF,2026-11-13,10.6004,12.74,-16.79,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq
+SPE,2026-11-18,11.65,14.661,-20.54,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+USA,2026-11-18,5.64,6.43,-12.29,"Nasdaq close and X-ticker NAV, read 19 Nov 2026 (matches CEF Connect history on Nov 17 for all 78 funds checked)"
+HERZ,2026-09-30,15.0301,18.67,-20.73,CEF Connect pricing history; Nov 18 NAV not yet posted on Nasdaq

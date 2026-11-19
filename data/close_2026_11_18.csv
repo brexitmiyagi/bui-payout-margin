@@ -1,0 +1,5 @@
+ticker,close,nav,monthly_distribution,source
+BUI,25.77,25.86,0.154,"Nasdaq historical close (BUI) and NAV (XBUIX), Nov 18 2026"
+UTF,25.00,27.01,0.165,"Nasdaq historical close (UTF) and NAV (XUTFX), Nov 18 2026"
+DNP,9.99,9.57,0.065,"Nasdaq historical close (DNP) and NAV (XDNPX), Nov 18 2026"
+GLU,17.6874,18.99,0.11,"Nasdaq historical close (GLU) and NAV (XGLUX), Nov 18 2026"
